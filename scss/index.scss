@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        max-width: 5rem;
+    }
+
+    button {
+        padding: .5rem;
+        max-height: 4rem;
+        max-width: 7rem;
+    }
+}
+
+main {
+    article {
+
+        .card_banner,
+        .card_banner2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 5%;
+            padding: 1rem;
+
+            img {
+                max-width: 8rem;
+            }
+        }
+
+        .card_banner {
+            background-color: white;
+            border: solid 8px #0076BC;
+            border-radius: 5px;
+        }
+
+        .card_banner2 {
+            background-color: white;
+            border: solid 8px #68AF21;
+            border-radius: 5px;
+        }
+
+        .card_double,
+        .card_double2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            padding: .6rem;
+            margin: 2%;
+
+            img {
+                max-width: 8.5rem;
+                padding: 12px;
+            }
+        }
+
+        .card_double {
+            .simple_card {
+                border-radius: 5px;
+                background-color: #68AF21;
+                border: solid 2px #EB6909;
+            }
+        }
+
+        .card_double2 {
+            .simple_card {
+                border-radius: 5px;
+                background-color: #0076BC;
+                border: solid 2px #EB6909;
+            }
+        }
+
+        .card_detail,
+        .card_detail2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin: 5%;
+            padding: 1rem;
+
+            img {
+                max-width: 8rem;
+            }
+
+            .card_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                margin-left: 5%;
+                max-width: 60%;
+            }
+
+        }
+
+        .card_detail {
+            background-color: white;
+            border: solid 8px #0076BC;
+            border-radius: 5px;
+        }
+
+        .card_detail2 {
+            background-color: white;
+            border: solid 8px #68AF21;
+            border-radius: 5px;
+        }
+
+    }
+}
+
+header,
+footer {
+    background-color: black;
+}
