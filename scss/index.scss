@@ -6,29 +6,38 @@
 
 body {
     height: 100vh;
+    background-color: rgb(230, 230, 230);
 }
 
 header {
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    img {
-        max-width: 5rem;
-    }
+    padding: .7rem;
 
     button {
         padding: .5rem;
         max-height: 4rem;
         max-width: 7rem;
+        border-radius: 8px;
+        color: black;
+        background-color: #68AF21;
+    }
+
+    .logo {
+        max-width: 4rem;
+    }
+
+    .burger {
+        max-width: 3rem;
     }
 }
 
 main {
     article {
 
-        .card_banner,
-        .card_banner2 {
+        .card_banner {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,7 +46,8 @@ main {
             padding: 1rem;
 
             img {
-                max-width: 8rem;
+                max-width: 16rem;
+                margin-bottom: 1rem;
             }
         }
 
@@ -47,46 +57,31 @@ main {
             border-radius: 5px;
         }
 
-        .card_banner2 {
-            background-color: white;
-            border: solid 8px #68AF21;
-            border-radius: 5px;
-        }
-
-        .card_double,
-        .card_double2 {
+        .card_double {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             flex-direction: row;
             text-align: center;
-            padding: .6rem;
             margin: 2%;
 
             img {
-                max-width: 8.5rem;
-                padding: 12px;
+                max-width: 10rem;
+                padding: 4px 4px 0 4px;
             }
         }
 
         .card_double {
+
             .simple_card {
-                border-radius: 5px;
+                border-radius: 2px;
+                padding: 6px 0 6px 0;
                 background-color: #68AF21;
                 border: solid 2px #EB6909;
             }
         }
 
-        .card_double2 {
-            .simple_card {
-                border-radius: 5px;
-                background-color: #0076BC;
-                border: solid 2px #EB6909;
-            }
-        }
-
-        .card_detail,
-        .card_detail2 {
+        .card_detail {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -116,16 +111,176 @@ main {
             border-radius: 5px;
         }
 
-        .card_detail2 {
-            background-color: white;
-            border: solid 8px #68AF21;
-            border-radius: 5px;
+        .map_card {
+            margin: 5%;
+            border: solid 2px #EB6909;
+            max-width: 90%;
+        }
+    }
+
+    .large_card {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        padding: 1rem;
+        border: #68AF21 solid 8px;
+
+        figure {
+            figcaption {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    padding: .5rem;
+    justify-content: space-between;
+
+    .card_double {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        padding: 6px;
+
+        .simple_card {
+            max-width: 2.5rem;
+            margin-right: .2rem;
+            padding: 2px;
         }
 
+        .simple_card2 {
+            max-width: 2.5rem;
+            padding: 2px;
+        }
+    }
+
+    .card_double2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        a {
+            margin: .5rem;
+            color: white;
+        }
     }
 }
 
-header,
-footer {
-    background-color: black;
+@media (min-width: 767px) {
+
+    main {
+        article {
+
+            .card_banner {
+                border: none;
+                border-bottom: #0076BC solid 6px;
+                background: none;
+                padding: 2rem;
+                border-radius: 0;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                img {
+                    max-width: 30rem;
+                    border-radius: 8px;
+                }
+            }
+
+            .card_double {
+                border: none;
+                border-bottom: #68AF21 solid 6px;
+
+                figure {
+                    figcaption {
+                        font-size: 2rem;
+                        font-weight: 600;
+                    }
+                }
+
+                .simple_card {
+                    background: none;
+                    border: none;
+
+                    img {
+                        max-width: 18rem;
+                        border-radius: 8px;
+                    }
+                }
+            }
+
+            .card_detail {
+                background: none;
+                border: none;
+                border-bottom: #0076BC solid 6px;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                img {
+                    max-width: 144rem;
+                    border-radius: 8px;
+                }
+            }
+
+        }
+
+        .large_card {
+            border: none;
+            border-bottom: #68AF21 solid 6px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main {
+        article {
+
+            .card_banner {
+                img {
+                    max-width: 50rem;
+                    border-radius: 8px;
+                }
+            }
+
+            .card_double {
+
+                .simple_card {
+                    border: solid 4px #EB6909;
+
+                    img {
+                        max-width: 32rem;
+                        border-radius: 8px;
+                    }
+                }
+            }
+
+            .card_detail {
+                img {
+                    max-width: 144rem;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
 }
