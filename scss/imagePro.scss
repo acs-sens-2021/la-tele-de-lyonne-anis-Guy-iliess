@@ -1,0 +1,49 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "footer";
+*{
+    @extend %init;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    @extend %flexNav;
+    background-color: $black;
+    img {
+        max-width: 5rem;
+    }
+
+    button {
+        @extend %adhesion;
+    }
+}
+h1{
+    @include h1(1.5rem);
+    &::after{
+        @include underline(60%, 73px, -8px);
+      
+    }
+}
+p{
+   margin-top: 20px; 
+   text-align: center;
+}
+.pagination{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    :first-child, :last-child{
+        border:1px solid black;
+        border-radius: 5px;
+        padding: 7px;
+        background-color: $brown;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 2px;
+      
+    }
+}
