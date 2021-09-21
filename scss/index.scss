@@ -1,3 +1,7 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,12 +21,7 @@ header {
     padding: .7rem;
 
     button {
-        padding: .5rem;
-        max-height: 4rem;
-        max-width: 7rem;
-        border-radius: 8px;
-        color: black;
-        background-color: #68AF21;
+        @extend %adhesion;
     }
 
     .logo {
@@ -32,10 +31,28 @@ header {
     .burger {
         max-width: 3rem;
     }
+
+    .card_head {
+        display: none;
+    }
 }
 
 main {
+
     article {
+
+        .titre {
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: $brown solid 2px;
+            width: max-content;
+        }
 
         .card_banner {
             display: flex;
@@ -53,8 +70,7 @@ main {
 
         .card_banner {
             background-color: white;
-            border: solid 8px #0076BC;
-            border-radius: 5px;
+            border: solid 8px $blue;
         }
 
         .card_double {
@@ -64,6 +80,12 @@ main {
             flex-direction: row;
             text-align: center;
             margin: 2%;
+
+            .barre_ {
+                border: $green solid 3px;
+                border-radius: 2px;
+                height: 30rem;
+            }
 
             img {
                 max-width: 10rem;
@@ -76,8 +98,8 @@ main {
             .simple_card {
                 border-radius: 2px;
                 padding: 6px 0 6px 0;
-                background-color: #68AF21;
-                border: solid 2px #EB6909;
+                background-color: $green;
+                border: solid 2px $brown;
             }
         }
 
@@ -107,13 +129,12 @@ main {
 
         .card_detail {
             background-color: white;
-            border: solid 8px #0076BC;
-            border-radius: 5px;
+            border: solid 8px $blue;
         }
 
         .map_card {
             margin: 5%;
-            border: solid 2px #EB6909;
+            border: solid 2px $brown;
             max-width: 90%;
         }
     }
@@ -123,7 +144,7 @@ main {
         flex-direction: column;
         margin: 5%;
         padding: 1rem;
-        border: #68AF21 solid 8px;
+        border: $green solid 8px;
 
         figure {
             figcaption {
@@ -134,7 +155,17 @@ main {
             }
         }
     }
+    .partenaires {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: 5%;
 
+        img {
+            display: flex;
+            max-width: 4rem;
+        }
+    }
 }
 
 footer {
@@ -171,6 +202,9 @@ footer {
         a {
             margin: .5rem;
             color: white;
+            text-decoration: none;
+            border-bottom: $brown solid 2px;
+            border-radius: 2px;
         }
     }
 }
@@ -180,9 +214,15 @@ footer {
     main {
         article {
 
+            .titre {
+                font-size: 4rem;
+                margin-top: 2rem;
+                margin-bottom: 0;
+            }
+
             .card_banner {
                 border: none;
-                border-bottom: #0076BC solid 6px;
+                border-bottom: $blue solid 6px;
                 background: none;
                 padding: 2rem;
                 border-radius: 0;
@@ -203,7 +243,7 @@ footer {
 
             .card_double {
                 border: none;
-                border-bottom: #68AF21 solid 6px;
+                border-bottom: $green solid 6px;
 
                 figure {
                     figcaption {
@@ -226,7 +266,7 @@ footer {
             .card_detail {
                 background: none;
                 border: none;
-                border-bottom: #0076BC solid 6px;
+                border-bottom: $blue solid 6px;
 
                 h1 {
                     font-size: 3rem;
@@ -246,40 +286,169 @@ footer {
 
         .large_card {
             border: none;
-            border-bottom: #68AF21 solid 6px;
+            border-bottom: $green solid 6px;
         }
     }
 }
 
 @media (min-width: 1200px) {
 
+    header {
+        .logo {
+            margin: 5%;
+            max-width: 6.5rem;
+        }
+
+        .don_asso,
+        .burger {
+            display: none;
+        }
+
+        .card_head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .menus {
+                margin-bottom: 1rem;
+
+                a {
+                    color: white;
+                    margin-right: 2rem;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    border-bottom: $brown solid 2px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
     main {
         article {
 
+            .map_card {
+                border: $brown solid 6px;
+            }
+
+            .card_banner,
+            .card_double,
+            .card_detail,
+            .large_card {
+                border-radius: 12px;
+
+                h1 {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
             .card_banner {
+                padding: 2rem;
+                border: solid 8px $blue;
+
                 img {
                     max-width: 50rem;
-                    border-radius: 8px;
                 }
             }
 
             .card_double {
+                padding: 2rem;
+                border: $green solid 6px;
+                margin: 5%;
 
                 .simple_card {
-                    border: solid 4px #EB6909;
+                    border: none;
+
+                    figcaption {
+                        font-size: 3rem;
+                    }
 
                     img {
                         max-width: 32rem;
-                        border-radius: 8px;
                     }
                 }
             }
 
             .card_detail {
+                padding: 2rem;
+                border: solid 8px $blue;
+
                 img {
                     max-width: 144rem;
-                    border-radius: 8px;
                 }
+            }
+        }
+
+        .large_card {
+            border: $green solid 6px;
+            border-radius: 8px;
+
+            figure {
+                figcaption {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .card_double {
+
+            .simple_card {
+                margin-left: 5rem;
+            }
+
+            .simple_card,
+            .simple_card2 {
+                max-width: 4rem;
+            }
+        }
+
+        .card_double2 {
+            a {
+                margin-right: 5rem;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        .logo {
+            margin: 8%;
+            max-width: 8rem;
+        }
+
+        .card_head {
+            .menus {
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    main {
+        article {
+
+            .card_banner,
+            .card_detail,
+            .card_double {
+                img {
+                    max-width: 90rem;
+                }
+            }
+        }
+
+    }
+
+    .large_card {
+        figure {
+            img {
+                max-width: 90rem;
             }
         }
     }
