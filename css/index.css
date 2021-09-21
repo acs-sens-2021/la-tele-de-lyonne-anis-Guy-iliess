@@ -46,6 +46,10 @@ header .burger {
   max-width: 3rem;
 }
 
+header .card_head {
+  display: none;
+}
+
 main article .titre {
   font-size: 3rem;
   display: -webkit-box;
@@ -112,6 +116,12 @@ main article .card_double {
           flex-direction: row;
   text-align: center;
   margin: 2%;
+}
+
+main article .card_double .barre_ {
+  border: #68af21 solid 3px;
+  border-radius: 2px;
+  height: 30rem;
 }
 
 main article .card_double img {
@@ -196,6 +206,25 @@ main .large_card figure figcaption {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: .5rem;
+}
+
+main .partenaires {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: auto;
+  margin: 5%;
+}
+
+main .partenaires img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 4rem;
 }
 
 footer {
@@ -377,9 +406,10 @@ footer .card_double2 a {
   main article .card_double {
     padding: 2rem;
     border: #68af21 solid 6px;
+    margin: 5%;
   }
   main article .card_double .simple_card {
-    border: solid 4px #f25c19;
+    border: none;
   }
   main article .card_double .simple_card figcaption {
     font-size: 3rem;
@@ -411,6 +441,24 @@ footer .card_double2 a {
   footer .card_double2 a {
     margin-right: 5rem;
     font-size: 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  header .logo {
+    margin: 8%;
+    max-width: 8rem;
+  }
+  header .card_head .menus a {
+    font-size: 2rem;
+  }
+  main article .card_banner img,
+  main article .card_detail img,
+  main article .card_double img {
+    max-width: 90rem;
+  }
+  .large_card figure img {
+    max-width: 90rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

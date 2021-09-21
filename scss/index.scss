@@ -31,11 +31,13 @@ header {
     .burger {
         max-width: 3rem;
     }
+
+    .card_head {
+        display: none;
+    }
 }
 
 main {
-
-    h1 {}
 
     article {
 
@@ -78,6 +80,12 @@ main {
             flex-direction: row;
             text-align: center;
             margin: 2%;
+
+            .barre_ {
+                border: $green solid 3px;
+                border-radius: 2px;
+                height: 30rem;
+            }
 
             img {
                 max-width: 10rem;
@@ -147,7 +155,17 @@ main {
             }
         }
     }
+    .partenaires {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: 5%;
 
+        img {
+            display: flex;
+            max-width: 4rem;
+        }
+    }
 }
 
 footer {
@@ -337,9 +355,10 @@ footer {
             .card_double {
                 padding: 2rem;
                 border: $green solid 6px;
+                margin: 5%;
 
                 .simple_card {
-                    border: solid 4px $brown;
+                    border: none;
 
                     figcaption {
                         font-size: 3rem;
@@ -391,6 +410,45 @@ footer {
             a {
                 margin-right: 5rem;
                 font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        .logo {
+            margin: 8%;
+            max-width: 8rem;
+        }
+
+        .card_head {
+            .menus {
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    main {
+        article {
+
+            .card_banner,
+            .card_detail,
+            .card_double {
+                img {
+                    max-width: 90rem;
+                }
+            }
+        }
+
+    }
+
+    .large_card {
+        figure {
+            img {
+                max-width: 90rem;
             }
         }
     }
