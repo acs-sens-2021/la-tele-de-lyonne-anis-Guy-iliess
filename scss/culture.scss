@@ -1,0 +1,58 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "footer";
+@import "nav";
+@import "pagination";
+
+* {
+    @extend %init;
+}
+
+body {
+    min-height: 100vh;
+}
+h1{
+  @include h1(1.5rem);   
+}
+hr{
+@extend %underline;
+}
+p{
+ margin-top: 20px;
+ text-align: center;
+}
+.cards{
+    display:grid;
+    width: 80%;
+  margin: auto;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(3, 1fr);
+            
+            }
+    .card{
+        @extend %flexCenterColumn;
+        border: $green-border;
+        @extend %card;
+        h2{
+            margin-top: $mt;
+            font-weight: 500;
+           text-transform: uppercase;
+           letter-spacing: 3px;
+           text-shadow: 3px 2px 3px $black;
+           
+        }
+        img{
+            width: 60%;
+            margin-top: $mt;
+            border-radius: 10px;
+
+        }
+        p{
+            margin: $mt;
+        }
+    }
+}

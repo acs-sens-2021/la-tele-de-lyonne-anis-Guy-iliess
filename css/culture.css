@@ -31,7 +31,7 @@ header button {
   cursor: pointer;
 }
 
-.container figure {
+.cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +55,13 @@ hr {
   height: 5px;
   background-color: #f25c19;
   border-radius: 5px;
+}
+
+.cards .card {
+  margin: 30px 20px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -90,7 +97,7 @@ header button {
   cursor: pointer;
 }
 
-.container figure {
+.cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +121,13 @@ hr {
   height: 5px;
   background-color: #f25c19;
   border-radius: 5px;
+}
+
+.cards .card {
+  margin: 30px 20px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -184,16 +198,156 @@ footer .links a {
   font-size: 1rem;
 }
 
-body {
-  min-height: 100vh;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header button {
+  padding: .5rem;
+  max-height: 4rem;
+  max-width: 7rem;
+  border-radius: 20px;
+  background: #f25c19;
+  border: none;
+  border-top: 2px solid  white;
+  border-right: 2px solid white;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+hr {
+  color: #f25c19;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  height: 5px;
+  background-color: #f25c19;
+  border-radius: 5px;
+}
+
+.cards .card {
+  margin: 30px 20px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
+  padding: .7rem;
 }
 
-header img {
-  max-width: 5rem;
+header .logo {
+  max-width: 4rem;
+}
+
+@media (min-width: 1200px) {
+  header .logo {
+    margin: 5%;
+    max-width: 6.5rem;
+  }
+}
+
+header .burger {
+  max-width: 3rem;
+}
+
+@media (min-width: 1200px) {
+  header .burger {
+    display: none;
+  }
+}
+
+header .card_head {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  header .card_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menus {
+    margin-bottom: 1rem;
+  }
+  .menus a {
+    color: white;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-bottom: #f25c19 solid 2px;
+    border-radius: 2px;
+  }
+}
+
+.pagination {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pagination :first-child,
+.pagination :last-child {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: #f25c19;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+}
+
+body {
+  min-height: 100vh;
 }
 
 h1 {
@@ -212,7 +366,7 @@ p {
 .cards {
   display: -ms-grid;
   display: grid;
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
@@ -230,45 +384,25 @@ p {
   }
 }
 
-.container {
-  margin: 30px 20px 10px 20px;
-  border: 2px solid #0076bc;
-  border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-}
-
-.container figure {
-  padding: 10px;
-}
-
-.container figure img {
-  margin-top: 20px;
-  width: 100%;
+.cards .card {
   border: 2px solid #68af21;
+}
+
+.cards .card h2 {
+  margin-top: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.cards .card img {
+  width: 60%;
+  margin-top: 15px;
   border-radius: 10px;
 }
 
-.container figure figcaption {
-  padding: 20px;
+.cards .card p {
+  margin: 15px;
 }
-
-.pagination {
-  margin-top: 35px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.pagination :first-child, .pagination :last-child {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 7px;
-  background-color: #f25c19;
-}
-
-.pagination a {
-  text-decoration: none;
-  color: black;
-  padding: 2px;
-}
-/*# sourceMappingURL=ccavant.css.map */
+/*# sourceMappingURL=culture.css.map */
