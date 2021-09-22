@@ -1,0 +1,48 @@
+.modal-warrper, .modal-warrper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-warrper h2 {
+  background-color: #0076bc;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.modal-warrper form input {
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.modal-warrper form textarea {
+  width: 80%;
+}
+
+.modal-warrper form .browse {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=modal.css.map */
