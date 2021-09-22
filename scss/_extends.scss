@@ -1,33 +1,46 @@
-%init{
+%init {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-%flexNav{
+
+%flexNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-%adhesion{
-        padding: .5rem;
-        max-height: 4rem;
-        max-width: 7rem;
-        border-radius: 20px;
-        background:$brown;
-        border:none;
-        border-top: 2px solid  white;
-        border-right: 2px solid white;
-        box-shadow: inset 2px 2px 5px $black, inset -2px -2px 5px $black ;
-        cursor: pointer;
+
+%adhesion {
+    padding: .5rem;
+    max-height: 4rem;
+    max-width: 7rem;
+    border-radius: 20px;
+    background: $brown;
+    border: none;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    box-shadow: inset 2px 2px 5px $black, inset -2px -2px 5px $black;
+    cursor: pointer;
 }
-%flexCenter{
+
+%flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-%flexCenterColumn{
+
+%flexCenterColumn {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+%underline{
+    color: $brown;
+    width: 50%;
+   margin-left:25%;
+   margin-top: 10px;
+   height: 5px;
+   background-color: $brown;
+   border-radius: 5px;
 }

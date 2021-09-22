@@ -1,6 +1,7 @@
 @import "variables";
 @import "extends";
 @import "mixins";
+// @import "nav";
 @import "footer";
 *{
     @extend %init;
@@ -21,10 +22,15 @@ header{
 }
 h1{
     @include h1(1.5rem);
-    &::after{
-        @include underline(95%, 11px, -8px);
-      
-    }
+   
+
+}
+hr{
+    @extend %underline;
+}
+p{
+    margin-top: 20px;
+    text-align: center;
 }
 .cards{
     display:grid;
@@ -42,7 +48,7 @@ h1{
     border: $blue-border;
     border-radius: 5px;
     box-shadow: 5px 5px 10px $black;
-      
+    
         figure{
         @extend %flexCenterColumn;
         padding: 10px;
