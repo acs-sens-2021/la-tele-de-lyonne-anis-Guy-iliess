@@ -155,15 +155,24 @@ main {
             }
         }
     }
+
     .partenaires {
         display: flex;
-        flex-direction: row;
-        overflow-x: auto;
+        flex-direction: column;
         margin: 5%;
+        padding: 2%;
+        border: solid 2px $green;
 
-        img {
-            display: flex;
-            max-width: 4rem;
+        .logo_part {
+            display: -webkit-box;
+            overflow-x: auto;
+            margin-top: 1rem;
+
+            img {
+                display: flex;
+                max-width: 6rem;
+                margin-right: 1.5rem;
+            }
         }
     }
 }

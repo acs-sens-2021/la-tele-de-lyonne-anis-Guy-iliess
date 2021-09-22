@@ -5,7 +5,7 @@ header button {
   border-radius: 20px;
   background: #f25c19;
   border: none;
-  border-top: 2px solid white;
+  border-top: 2px solid  white;
   border-right: 2px solid white;
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
@@ -213,19 +213,27 @@ main .partenaires {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow-x: auto;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 5%;
+  padding: 2%;
+  border: solid 2px #68af21;
 }
 
-main .partenaires img {
+main .partenaires .logo_part {
+  display: -webkit-box;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+main .partenaires .logo_part img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 4rem;
+  max-width: 6rem;
+  margin-right: 1.5rem;
 }
 
 footer {
