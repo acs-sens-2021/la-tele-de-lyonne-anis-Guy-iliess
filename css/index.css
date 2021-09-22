@@ -66,7 +66,8 @@ main article .titre {
           transform: translateX(-50%);
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-bottom: #f25c19 solid 2px;
+  -webkit-text-decoration: #f25c19 underline;
+          text-decoration: #f25c19 underline;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -385,7 +386,8 @@ footer .card_double2 a {
     margin-right: 2rem;
     font-size: 1.5rem;
     text-decoration: none;
-    border-bottom: #f25c19 solid 2px;
+    -webkit-text-decoration: #f25c19 underline;
+            text-decoration: #f25c19 underline;
     border-radius: 2px;
   }
   main article .titre {

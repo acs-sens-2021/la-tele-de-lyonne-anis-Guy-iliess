@@ -50,7 +50,7 @@ main {
             transform: translateX(-50%);
             margin-top: 2rem;
             margin-bottom: 2rem;
-            border-bottom: $brown solid 2px;
+            text-decoration: $brown underline;
             width: max-content;
         }
 
@@ -327,7 +327,7 @@ footer {
                     margin-right: 2rem;
                     font-size: 1.5rem;
                     text-decoration: none;
-                    border-bottom: $brown solid 2px;
+                    text-decoration: $brown underline;
                     border-radius: 2px;
                 }
             }
