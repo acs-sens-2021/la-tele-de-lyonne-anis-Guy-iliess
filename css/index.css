@@ -118,12 +118,6 @@ main article .card_double {
   margin: 2%;
 }
 
-main article .card_double .barre_ {
-  border: #68af21 solid 3px;
-  border-radius: 2px;
-  height: 30rem;
-}
-
 main article .card_double img {
   max-width: 10rem;
   padding: 4px 4px 0 4px;
@@ -201,6 +195,11 @@ main .large_card {
   border: #68af21 solid 8px;
 }
 
+main .large_card figure img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
 main .large_card figure figcaption {
   text-align: center;
   font-size: 1.5rem;
@@ -212,19 +211,27 @@ main .partenaires {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow-x: auto;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 5%;
+  padding: 2%;
+  border: solid 2px #68af21;
 }
 
-main .partenaires img {
+main .partenaires .logo_part {
+  display: -webkit-box;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+main .partenaires .logo_part img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 4rem;
+  max-width: 6rem;
+  margin-right: 1.5rem;
 }
 
 footer {
@@ -381,8 +388,12 @@ footer .card_double2 a {
     border-bottom: #f25c19 solid 2px;
     border-radius: 2px;
   }
+  main article .titre {
+    border-bottom: solid 6px #f25c19;
+    border-radius: 6px;
+  }
   main article .map_card {
-    border: #f25c19 solid 6px;
+    border: #f25c19 solid 8px;
   }
   main article .card_banner,
   main article .card_double,
@@ -405,7 +416,7 @@ footer .card_double2 a {
   }
   main article .card_double {
     padding: 2rem;
-    border: #68af21 solid 6px;
+    border: #68af21 solid 8px;
     margin: 5%;
   }
   main article .card_double .simple_card {
@@ -424,19 +435,47 @@ footer .card_double2 a {
   main article .card_detail img {
     max-width: 144rem;
   }
+  main .partenaires {
+    border: solid 8px #68af21;
+    border-radius: 6px;
+  }
+  main .partenaires .titre_part {
+    font-size: 42px;
+    border-bottom: solid 6px #0076bc;
+    border-radius: 6px;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  main .partenaires .logo_part img {
+    max-width: 8rem;
+  }
   main .large_card {
-    border: #68af21 solid 6px;
+    border: #68af21 solid 8px;
     border-radius: 8px;
   }
   main .large_card figure figcaption {
     font-size: 3rem;
   }
   footer .card_double .simple_card {
-    margin-left: 5rem;
+    margin-left: 3rem;
+    margin-right: 0;
   }
   footer .card_double .simple_card,
   footer .card_double .simple_card2 {
-    max-width: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 10rem;
+    padding: 0;
+  }
+  footer .card_double .simple_card img,
+  footer .card_double .simple_card2 img {
+    margin-right: .5rem;
   }
   footer .card_double2 a {
     margin-right: 5rem;
@@ -452,10 +491,27 @@ footer .card_double2 a {
   header .card_head .menus a {
     font-size: 2rem;
   }
+  main article .card_banner,
+  main article .card_detail,
+  main article .card_double {
+    margin: 8%;
+  }
   main article .card_banner img,
   main article .card_detail img,
   main article .card_double img {
     max-width: 90rem;
+  }
+  main article .map_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 80rem;
   }
   .large_card figure img {
     max-width: 90rem;
