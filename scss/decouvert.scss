@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search { 
+    position: relative;
+    background-color: #FFA12E;
+    border-radius: 15px;
+    padding: 20px;
+    
+    margin: 50px 15px 0 15px;
+
+    .ligne{
+        display: flex;
+        margin-bottom: 15px;
+        
+    .vert {
+ 
+        background-color: green;
+        height: 3px;
+        width: 26%;
+        margin-right: 5px;
+    }
+
+    .bleu {
+        background-color: blue;
+        height: 3px;
+        width: 26%;
+    }
+}
+
+  img{
+position: absolute;
+width: 8%;
+margin-top: 6px;
+margin-left: 255px;
+  }
+
+    input {
+
+        border-radius: 50px;
+        width: 100%;
+        padding: 10px;
+
+    }
+}
+
+
+
+.conteneur1vert {
+
+    margin: 50px 15px 0 15px;
+    background-color: #68af21;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+    .bande1 {
+
+        background-color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+
+
+        display: grid;
+        grid-template: 1fr 2fr;
+        row-gap: 5px;
+
+        img {
+            width: 100%;
+            grid-row: 1;
+            grid-column: 1 / 2;
+            margin: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            grid-column-start: 2;
+            font-size: 22px;
+        }
+
+        p {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        
+    }
+    .search{
+        .ligne{
+            margin-bottom: 20px;
+            .vert{
+                width: 11%;
+            }
+            .bleu{
+                width: 11%;
+            }
+        }
+        img{
+           width: 4%;
+           margin-left: 654px;
+        }
+        
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+
+    }
+    .search{
+        width: 50%;
+        margin-left: 25%;
+        .ligne{
+            margin-bottom: 30px;
+            .vert{
+                width: 8%;
+            }
+            .bleu{
+                width: 8%;
+            }
+        }
+        
+        img{
+           width: 30px;
+           margin-left: 112rem;
+        } 
+
+        .input{
+            padding-bottom: 50px;
+        }
+    }
+}
