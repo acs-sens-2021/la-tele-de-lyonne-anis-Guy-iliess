@@ -1,0 +1,16 @@
+@mixin h1($size){
+    text-align:center;
+    text-transform: uppercase;
+    font-size: $size;
+    margin-top:15px;
+    position: relative;
+}
+@mixin underline($width, $right, $bottom){
+    content:"";
+        position: absolute;
+        width: $width;
+        height: 3px;
+        right: $right;
+        bottom: $bottom;
+        background-color: $brown;
+}

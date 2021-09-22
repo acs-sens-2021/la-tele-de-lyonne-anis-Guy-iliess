@@ -1,0 +1,84 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+// @import "nav";
+@import "footer";
+*{
+    @extend %init;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    @extend %flexNav;
+    background-color: $black;
+    img {
+        max-width: 5rem;
+    }
+
+    button {
+        @extend %adhesion;
+    }
+}
+h1{
+    @include h1(1.5rem);
+   
+
+}
+hr{
+    @extend %underline;
+}
+p{
+    margin-top: 20px;
+    text-align: center;
+}
+.cards{
+    display:grid;
+    @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+        }
+
+}
+.container{
+  
+    margin: 30px 20px 10px 20px;
+    border: $blue-border;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px $black;
+    
+        figure{
+        @extend %flexCenterColumn;
+        padding: 10px;
+        img{
+            margin-top: 20px;
+            width: 100%;
+           
+            border:$green-border;
+            border-radius: 10px;
+        }
+        figcaption{
+            padding: 20px;
+        }
+    }
+}
+.pagination{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    :first-child, :last-child{
+        border:1px solid black;
+        border-radius: 5px;
+        padding: 7px;
+        background-color: $brown;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 2px;
+      
+    }
+}
+

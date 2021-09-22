@@ -1,0 +1,33 @@
+%init{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+%flexNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%adhesion{
+        padding: .5rem;
+        max-height: 4rem;
+        max-width: 7rem;
+        border-radius: 20px;
+        background:$brown;
+        border:none;
+        border-top: 2px solid  white;
+        border-right: 2px solid white;
+        box-shadow: inset 2px 2px 5px $black, inset -2px -2px 5px $black ;
+        cursor: pointer;
+}
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexCenterColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,90 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
+
+    button {
+        @extend %adhesion;
+    }
+
+    .logo {
+        max-width: 4rem;
+    }
+
+    .burger {
+        max-width: 3rem;
+    }
+
+    .card_head {
+        display: none;
+    }
+}
+
+main {
+    margin: 5%;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        .titre {
+            text-align: center;
+            text-decoration: underline $brown;
+            margin-bottom: 1rem;
+            font-size: 32px;
+        }
+
+        img {
+            border-radius: 12px;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 20px;
+        }
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        border: solid 4px $blue;
+        border-radius: 4px;
+        padding: 6px;
+
+        .date {
+            margin-bottom: .5rem;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-decoration: underline $brown;
+            margin-bottom: 1rem;
+        }
+
+        .sommaire {
+            font-size: 18px;
+        }
+    }
+}
