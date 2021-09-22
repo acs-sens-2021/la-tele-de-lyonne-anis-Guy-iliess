@@ -2,10 +2,13 @@
 @import "extends";
 @import "mixins";
 @import "footer";
-*{
+// @import "nav";
+
+* {
     @extend %init;
 }
-body{
+
+body {
     min-height: 100vh;
 }
 header{
@@ -19,31 +22,81 @@ header{
         @extend %adhesion;
     }
 }
-h1{
+h1 {
     @include h1(1.5rem);
-    &::after{
-        @include underline(60%, 73px, -8px);
-      
+}
+hr{
+   @extend %underline;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+.cards {
+    display: grid;
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        }
+     @media (min-width: 992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+    .card {
+        @extend %flexCenterColumn;
+        border: $blue-border;
+        margin: 30px 20px 10px 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px $black;
+        
+     
+        img{
+            width: 75%;
+            margin-top: $mt;
+            border-radius: 10px;
+
+        }
+        h2{
+            margin-top: $mt;
+            font-weight: 500;
+            color: $brown;
+            text-decoration: underline;
+        }
+        p{
+            margin-top: $mt;
+        }
+        a{
+            margin: $mt;
+            background-color: $blue;
+            text-decoration: none;
+            color:$black;
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+            padding: 10px;
+        }
     }
 }
-p{
-   margin-top: 20px; 
-   text-align: center;
-}
-.pagination{
+
+.pagination {
     margin-top: 35px;
     margin-bottom: 15px;
     text-align: center;
-    :first-child, :last-child{
-        border:1px solid black;
+
+    :first-child,
+    :last-child {
+        border: 1px solid black;
         border-radius: 5px;
         padding: 7px;
         background-color: $brown;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: black;
         padding: 2px;
-      
+
     }
 }
+

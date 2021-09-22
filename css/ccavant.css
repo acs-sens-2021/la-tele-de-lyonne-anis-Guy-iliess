@@ -24,7 +24,7 @@ header button {
   border-radius: 20px;
   background: #f25c19;
   border: none;
-  border-top: 2px solid  white;
+  border-top: 2px solid white;
   border-right: 2px solid white;
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
@@ -45,6 +45,16 @@ header button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+hr {
+  color: #f25c19;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  height: 5px;
+  background-color: #f25c19;
+  border-radius: 5px;
 }
 
 * {
@@ -73,7 +83,7 @@ header button {
   border-radius: 20px;
   background: #f25c19;
   border: none;
-  border-top: 2px solid  white;
+  border-top: 2px solid white;
   border-right: 2px solid white;
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
@@ -94,6 +104,16 @@ header button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+hr {
+  color: #f25c19;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  height: 5px;
+  background-color: #f25c19;
+  border-radius: 5px;
 }
 
 footer {
@@ -184,14 +204,9 @@ h1 {
   position: relative;
 }
 
-h1::after {
-  content: "";
-  position: absolute;
-  width: 95%;
-  height: 3px;
-  right: 11px;
-  bottom: -8px;
-  background-color: #f25c19;
+p {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .cards {

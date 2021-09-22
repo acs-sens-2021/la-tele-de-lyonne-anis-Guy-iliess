@@ -81,6 +81,12 @@ main {
             text-align: center;
             margin: 2%;
 
+            .barre_ {
+                border: $green solid 3px;
+                border-radius: 2px;
+                height: 30rem;
+            }
+
             img {
                 max-width: 10rem;
                 padding: 4px 4px 0 4px;
@@ -141,11 +147,6 @@ main {
         border: $green solid 8px;
 
         figure {
-            img {
-                border-radius: 8px;
-                max-width: 100%;
-            }
-
             figcaption {
                 text-align: center;
                 font-size: 1.5rem;
@@ -154,25 +155,15 @@ main {
             }
         }
     }
-
-
     .partenaires {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        overflow-x: auto;
         margin: 5%;
-        padding: 2%;
-        border: solid 2px $green;
 
-        .logo_part {
-            display: -webkit-box;
-            overflow-x: auto;
-            margin-top: 1rem;
-
-            img {
-                display: flex;
-                max-width: 6rem;
-                margin-right: 1.5rem;
-            }
+        img {
+            display: flex;
+            max-width: 4rem;
         }
     }
 }
@@ -336,13 +327,9 @@ footer {
 
     main {
         article {
-            .titre {
-                border-bottom: solid 6px $brown;
-                border-radius: 6px;
-            }
 
             .map_card {
-                border: $brown solid 8px;
+                border: $brown solid 6px;
             }
 
             .card_banner,
@@ -367,7 +354,7 @@ footer {
 
             .card_double {
                 padding: 2rem;
-                border: $green solid 8px;
+                border: $green solid 6px;
                 margin: 5%;
 
                 .simple_card {
@@ -393,26 +380,8 @@ footer {
             }
         }
 
-        .partenaires {
-            border: solid 8px $green;
-            border-radius: 6px;
-
-            .titre_part {
-                font-size: 42px;
-                border-bottom: solid 6px $blue;
-                border-radius: 6px;
-                max-width: max-content;
-            }
-
-            .logo_part {
-                img {
-                    max-width: 8rem;
-                }
-            }
-        }
-
         .large_card {
-            border: $green solid 8px;
+            border: $green solid 6px;
             border-radius: 8px;
 
             figure {
@@ -428,20 +397,12 @@ footer {
         .card_double {
 
             .simple_card {
-                margin-left: 3rem;
-                margin-right: 0;
+                margin-left: 5rem;
             }
 
             .simple_card,
             .simple_card2 {
-                display: flex;
-                flex-direction: row;
-                max-width: 10rem;
-                padding: 0;
-
-                img {
-                    margin-right: .5rem;
-                }
+                max-width: 4rem;
             }
         }
 
@@ -471,28 +432,17 @@ footer {
     }
 
     main {
-
         article {
 
             .card_banner,
             .card_detail,
             .card_double {
-                margin: 8%;
                 img {
                     max-width: 90rem;
                 }
             }
-
-            .map_card {
-                display: flex;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                margin-right: 0;
-                margin-top: 0;
-                margin-bottom: 0;
-                max-width: 80rem;
-            }
         }
+
     }
 
     .large_card {
@@ -502,5 +452,4 @@ footer {
             }
         }
     }
-
 }
