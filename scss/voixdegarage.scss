@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+.cards{
+    display: grid;
+  
+   
+}
+.card1 {
+     background-color: white;
+    border: solid 3px blue;
+    border-radius: 15px;
+    margin: 50px 15px 0 15px;
+    text-align: center;
+    padding-bottom: 40px;
+
+    h2 {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .date {
+        display: flex;
+     align-items: center;
+     justify-content: center;
+        margin-top: 15px;
+       margin-bottom: 15px;
+    
+        img {
+            width: 15%;
+            height: 10%;
+            border: none;
+        }
+        p{
+            color: green;
+            text-align: center;
+            font-size: 1.5rem;
+        
+        }
+    }
+
+    img {
+        width: 80%;
+        border-radius: 15px;
+        border: solid 3px rgb(39, 228, 39);
+
+    }
+
+    p {
+        margin: 20px 20px 20px 20px;
+        text-align: start;
+    }
+
+    video {
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .cards{ 
+        grid-template-columns:  repeat( 2, 1fr);
+    }
+    video{
+        width: 85%;
+        height: 30%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+       width: 80%;
+    }
+    video{
+        width: 80%;
+        height: 30%;
+    }
+    
+}
