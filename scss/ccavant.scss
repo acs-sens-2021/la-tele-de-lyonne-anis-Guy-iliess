@@ -3,6 +3,7 @@
 @import "mixins";
 // @import "nav";
 @import "footer";
+@import "modal";
 *{
     @extend %init;
 }

@@ -31,7 +31,19 @@ header button {
   cursor: pointer;
 }
 
-.cards .card {
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-warrper, .modal-warrper form, .cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +109,19 @@ header button {
   cursor: pointer;
 }
 
-.cards .card {
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-warrper, .modal-warrper form, .cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,13 +170,6 @@ footer .social-media {
       grid-template: repeat(2, 1fr)/repeat(2, 1fr);
 }
 
-@media (min-width: 768px) {
-  footer .social-media {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 footer .social-media a {
   padding-left: 5px;
   padding-bottom: 5px;
@@ -165,7 +182,7 @@ footer .social-media a {
 }
 
 footer .social-media a img {
-  width: 85%;
+  width: 35%;
 }
 
 @media (min-width: 768px) {
@@ -231,7 +248,19 @@ header button {
   cursor: pointer;
 }
 
-.cards .card {
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-warrper, .modal-warrper form, .cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,6 +373,122 @@ header .card_head {
   text-decoration: none;
   color: black;
   padding: 2px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header button {
+  padding: .5rem;
+  max-height: 4rem;
+  max-width: 7rem;
+  border-radius: 20px;
+  background: #f25c19;
+  border: none;
+  border-top: 2px solid  white;
+  border-right: 2px solid white;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-warrper, .modal-warrper form, .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+hr {
+  color: #f25c19;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  height: 5px;
+  background-color: #f25c19;
+  border-radius: 5px;
+}
+
+.cards .card {
+  margin: 30px 20px 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: #c41313;
+}
+
+.modal-warrper h2 {
+  background-color: #0076bc;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.modal-warrper form input {
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.modal-warrper form textarea {
+  width: 80%;
+}
+
+.modal-warrper form .browse {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+}
+
+.modal-warrper form .browse span {
+  color: white;
+}
+
+.modal-warrper form .browse button {
+  background-color: #68af21;
 }
 
 body {

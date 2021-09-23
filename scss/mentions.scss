@@ -1,0 +1,30 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "footer";
+@import "nav";
+* {
+    @extend %init;
+}
+
+body {
+    min-height: 100vh;
+}
+h1{
+  @include h1(1.5rem);   
+}
+hr{
+@extend %underline;
+}
+h2{
+margin:20px
+}
+p{
+    margin:15px;
+}
+ul{
+    margin-left: 3.5rem;
+    li{
+        padding-bottom:10px ;
+    }
+}
