@@ -24,7 +24,7 @@ header button {
   border-radius: 20px;
   background: #f25c19;
   border: none;
-  border-top: 2px solid white;
+  border-top: 2px solid  white;
   border-right: 2px solid white;
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
@@ -83,7 +83,7 @@ header button {
   border-radius: 20px;
   background: #f25c19;
   border: none;
-  border-top: 2px solid white;
+  border-top: 2px solid  white;
   border-right: 2px solid white;
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
@@ -212,6 +212,8 @@ p {
 .cards {
   display: -ms-grid;
   display: grid;
+  width: 80%;
+  margin: auto;
 }
 
 @media (min-width: 768px) {

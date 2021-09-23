@@ -31,3 +31,18 @@
     align-items: center;
     flex-direction: column;
 }
+%underline{
+    color: #f25c19;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    height: 5px;
+    background-color: #f25c19;
+    border-radius: 5px;
+}
+%card{
+
+margin: 30px 20px 10px 20px;
+border-radius: 5px;
+box-shadow: 5px 5px 10px $black;
+}
