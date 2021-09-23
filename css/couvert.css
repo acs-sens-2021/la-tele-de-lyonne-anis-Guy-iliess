@@ -12,96 +12,6 @@ header button {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header button {
-  padding: .5rem;
-  max-height: 4rem;
-  max-width: 7rem;
-  border-radius: 20px;
-  background: #f25c19;
-  border: none;
-  border-top: 2px solid  white;
-  border-right: 2px solid white;
-  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
-          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-}
-
-footer {
-  width: 100%;
-  height: 15%;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 35px;
-}
-
-footer .social-media {
-  margin: 15px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[2];
-  -ms-grid-columns: (1fr)[2];
-      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-}
-
-footer .social-media a {
-  padding-left: 5px;
-  padding-bottom: 5px;
-}
-
-@media (min-width: 768px) {
-  footer .social-media a {
-    padding: 25px 0 0 0;
-  }
-}
-
-footer .social-media a img {
-  width: 35%;
-}
-
-@media (min-width: 768px) {
-  footer .social-media a img {
-    width: 25%;
-  }
-}
-
-footer .links {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 65%;
-          flex: 1 0 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-right: 15px;
-}
-
-footer .links a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 3px;
-  font-size: 1rem;
-}
-
->>>>>>> 31f54901f890d36dbf503a79e1f1d68710961fa7
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -112,6 +22,8 @@ footer .links a {
 body {
   height: 100vh;
   background-color: #e6e6e6;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -448,28 +360,61 @@ footer .card_double2 a {
   }
   main .diffusion {
     border-radius: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 8%;
+    padding-top: 3%;
     border-left: none;
     border-right: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .diffusion .date_img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  main .diffusion h1,
-  main .diffusion img,
-  main .diffusion p {
+  main .diffusion .date_img img {
+    max-width: 30rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    margin: 0;
+  }
+  main .diffusion .descript {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 50%;
+  }
+  main .diffusion .descript p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  main .diffusion h1,
+  main .diffusion img,
   main .diffusion h2 {
     font-size: 40px;
   }
@@ -478,13 +423,6 @@ footer .card_double2 a {
   }
   main .diffusion .date {
     font-size: 36px;
-  }
-  main .diffusion img {
-    margin: 3rem;
-    max-width: 35rem;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
   main .nav_buttons {
     font-size: 24px;

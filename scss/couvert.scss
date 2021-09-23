@@ -11,6 +11,8 @@
 body {
     height: 100vh;
     background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -356,22 +358,42 @@ footer {
 
         .diffusion {
             border-radius: 0;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 5%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 8%;
+            padding-top: 3%;
             border-left: none;
             border-right: none;
+            flex-direction: row;
+            justify-content: space-between;
 
             .date_img {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+                img {
+                    max-width: 30rem;
+                    transform: translateX(0);
+                    margin: 0;
+                }
+            }
+
+            .descript {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 50%;
+                // margin-left: 25%;
+
+                p {
+                    display: flex;
+                }
             }
 
             h1,
             img,
-            p {
-                display: flex;
-            }
 
             h2 {
                 font-size: 40px;
@@ -383,13 +405,6 @@ footer {
 
             .date {
                 font-size: 36px;
-            }
-
-            img {
-                margin: 3rem;
-                max-width: 35rem;
-                margin-left: 50%;
-                transform: translateX(-50%);
             }
         }
 
