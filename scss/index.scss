@@ -311,6 +311,9 @@ footer {
 @media (min-width: 1600px) {
 
     main {
+        width: 75%;
+        margin: auto;
+
         article {
 
             .titre {
@@ -328,10 +331,16 @@ footer {
                 margin: 15%;
                 margin-top: 0;
                 margin-bottom: 5%;
+                align-items: start;
 
                 p {
-                    font-size: 42px;
+                    font-size: 28px;
 
+                }
+
+                button {
+                    padding: 1%;
+                    align-self: center;
                 }
             }
         }
@@ -340,12 +349,24 @@ footer {
             margin: 10%;
             margin-top: 0;
             margin-bottom: 5%;
+
+            button {
+                padding: 1%;
+                max-width: max-content;
+            }
         }
 
         .map {
             margin: 15%;
             margin-top: 0;
             margin-bottom: 0;
+        }
+
+        .partenaires {
+            button {
+                padding: 1%;
+                max-width: max-content;
+            }
         }
     }
 }
