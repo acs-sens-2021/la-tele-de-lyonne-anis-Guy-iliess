@@ -159,6 +159,10 @@ main {
         a {
             color: #ff64d0;
             text-decoration: none;
+
+            @media (min-width: 1200px) {
+                font-size: 30px;
+            }
         }
     }
 }
