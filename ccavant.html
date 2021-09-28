@@ -13,100 +13,82 @@
 <body>
     <header>
         <a href="./index.html">
-            <img src="./img/logo-placeholder-png.png" alt="logo" width="100%">
+            <img src="./img/logo-placeholder-png.png" alt="logo" class="logo" width="80%">
         </a>
-        <button>Adhèrez à notre association !</button>
-        <img src="./img/burger_open.svg" alt="burger" width="100%">
+        <div class="txt_head">
+            <div class="card_head">
+                <p class="menus">
+                    <a href="./ccavant.html">A Découvert</a>
+                    <a href="./ccavant.html">C'était comment avant ?</a>
+                    <a href="./ccavant.html">Images de Pros</a>
+                    <a href="./ccavant.html">Le JT</a>
+                    <a href="./ccavant.html">Restons Couverts</a>
+                    <a href="./ccavant.html">Top Culture</a>
+                    <a href="./ccavant.html">Voix de Garage</a>
+                </p>
+            </div>
+        </div>
+        <button class="don_asso">Adhèrez à l'association !</button>
+        <img src="./img/burger_open.svg" alt="burger" class="burger mobil" width="100%">
     </header>
+
     <main>
-        <h1> C'était comment avant ?</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non amet quibusdam ea voluptate, eligendi facilis
-            unde. Repellendus provident maiores nisi ratione asperiores ex nobis est sequi iusto temporibus,
-            necessitatibus aperiam?
-        </p>
-        <section class="cards">
-            <article class="container">
+
+        <h1 class="titre"> C'était comment avant ?</h1>
+        <div class="dual_card">
+            <article class="prez_card case1">
                 <figure>
-                    <img src="./img/maison-de-retraite-les-cedres-paron-02.jpg" alt="maison">
-                    <figcaption>Lorem, ipsum.</figcaption>
+                    <img src="https://fakeimg.pl/2000/" alt="logo-placeholder-png" width="100%">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
                 </figure>
             </article>
-            <article class="container">
+            <article class="prez_card case2">
                 <figure>
-                    <img src="./img/maison-de-retraite-les-cedres-paron-02.jpg" alt="maison">
-                    <figcaption>Lorem, ipsum.</figcaption>
+                    <img src="https://fakeimg.pl/2000/" alt="logo-placeholder-png" width="100%">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
                 </figure>
             </article>
-            <article class="container">
+            <article class="prez_card case3">
                 <figure>
-                    <img src="./img/maison-de-retraite-les-cedres-paron-02.jpg" alt="maison">
-                    <figcaption>Lorem, ipsum.</figcaption>
+                    <img src="https://fakeimg.pl/2000/" alt="logo-placeholder-png" width="100%">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
                 </figure>
             </article>
-            <article class="container">
+        </div>
+        <div class="dual_card">
+            <article class="prez_card case4">
                 <figure>
-                    <img src="./img/maison-de-retraite-les-cedres-paron-02.jpg" alt="Elephant at sunset">
-                    <figcaption>Lorem, ipsum.</figcaption>
+                    <img src="https://fakeimg.pl/2000/" alt="logo-placeholder-png" width="100%">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
                 </figure>
             </article>
-            <article class="container">
+            <article class="prez_card case5">
                 <figure>
-                    <img src="./img/maison-de-retraite-les-cedres-paron-02.jpg" alt="maison">
-                    <figcaption>Lorem, ipsum.</figcaption>
+                    <img src="https://fakeimg.pl/2000/" alt="logo-placeholder-png" width="100%">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
                 </figure>
             </article>
-            <article class="container">
+            <article class="prez_card case6">
                 <figure>
-                    <img src="./img/maison-de-retraite-les-cedres-paron-02.jpg" alt="maison">
-                    <figcaption>Lorem, ipsum.</figcaption>
+                    <img src="https://fakeimg.pl/2000/" alt="logo-placeholder-png" width="100%">
+                    <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
                 </figure>
             </article>
-           
-       
-        </section>
+        </div>
+
         <div class="pagination">
-            <a href="">précédnt</a>
+            <a href="">&#10096;&#10096; Précédent</a>
             <a href="">1</a>
             <a href="">2</a>
             <a href="">3</a>
             <a href="">4</a>
             <a href="">5</a>
             <a href="">6</a>
-            <a href="">suivant</a>
+            <a href="">Suivant &#10095;&#10095;</a>
+        </div>
         </div>
     </main>
     <footer>
-        <div class="social-media">
-            <a href=""><img src="./img/facebook.svg" alt="facebook"></a>
-            <a href=""><img src="./img/twitter-icon.svg" alt="twitter"></a>
-            <a href=""><img src="./img/Instagram_logo_2016.svg.png" alt="instagram"></a>
-            <a href=""><img src="./img/linkedin.png" alt="linkedin"></a>
-        </div>
-        <div class="links">
-            <a href="#modal1">Nous contacter</a>
-            <!-- <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="titlemodal">
-                <div class="modal-warrper">
-                    <h2 class="titlemodal">Mon message</h2>
-                    <form action="">
-                        <input type="text" placeholder="nom *">
-                        <input type="text" placeholder="adresse Email *">
-                        <input type="text" placeholder="sujet *">
-                        <textarea name="" id="" cols="30" rows="10"> Une question, une remarque, une idée de reportage ou une suggestion pour le site ? 
-Vous avez un projet et vous souhaitez nous en parler ?</textarea>
-                       <div class="browse">
-                        <span>Mon fichier</span>
-                        <button type="button">parcourir...</button>
-                    </div> 
-                        <button type="button">envoyer</button>
-                        <p>**Vous pouvez également nous contacter par téléphone au 06 07 13 07 29</p>
-                    </form>
-                </div>
-
-            </aside> -->
-            <a href="">Mentions légales</a>
-            <a href="">cookies</a>
-        </div>
     </footer>
 </body>
 
