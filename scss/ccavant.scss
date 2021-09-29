@@ -1,87 +1,169 @@
 @import "variables";
 @import "extends";
 @import "mixins";
-// @import "nav";
+@import "navbar";
 @import "footer";
 @import "modal";
-*{
+
+* {
     @extend %init;
 }
-body{
-    min-height: 100vh;
-}
-header{
-    @extend %flexNav;
-    background-color: $black;
-    img {
-        max-width: 5rem;
-    }
 
-    button {
-        @extend %adhesion;
-    }
+body {
+    height: 100vh;
+    background-color: #100e0f;
+    color: #F5F5F5;
 }
-h1{
-    @include h1(1.5rem);
-   
 
-}
-hr{
-    @extend %underline;
-}
-p{
-    margin-top: 20px;
+.titre {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 30px;
     text-align: center;
-}
-.cards{
-    display:grid;
-    width: 75%;
-    margin: auto;
-    @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    }
-    @media (min-width: 992px) {
-        grid-template-columns: repeat(3, 1fr);
-        }
 
-}
-.container{
-  
-    margin: 30px 20px 10px 20px;
-    border: $blue-border;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px $black;
-    
-        figure{
-        @extend %flexCenterColumn;
-        padding: 10px;
-        img{
-            margin-top: 20px;
-            width: 100%;
-           
-            border:$green-border;
-            border-radius: 10px;
-        }
-        figcaption{
-            padding: 20px;
-        }
+    @media (min-width: 760px) {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 50px;
     }
-}
-.pagination{
-    margin-top: 35px;
-    margin-bottom: 15px;
-    text-align: center;
-    :first-child, :last-child{
-        border:1px solid black;
-        border-radius: 5px;
-        padding: 7px;
-        background-color: $brown;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-        padding: 2px;
-      
+
+    @media (min-width: 1300px) {
+        font-size: 76px;
     }
 }
 
+span,
+p,
+figcaption,
+a {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    font-weight: bold;
+}
+
+
+main {
+
+    @media (min-width: 1360px) {
+        display: grid;
+    }
+
+    .dual_card {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: auto;
+
+        .prez_card {
+            margin: 2%;
+            padding: 5%;
+            box-shadow: inset 5px 5px 10px #242222, inset -5px -5px 10px #242222;
+            border-radius: 5%;
+
+            @media (min-width: 760px) {
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 1%;
+                padding-top: 2%;
+                margin: 1%;
+            }
+
+            @media (min-width: 1300px) {
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-bottom: 5%;
+                padding-top: 5%;
+                margin: 3%;
+            }
+
+            video {
+                border-radius: 5%;
+                margin-bottom: 2%;
+            }
+
+            figcaption {
+                justify-self: center;
+                font-size: 18px;
+
+                @media (min-width:760px) {
+                    font-size: 20px;
+                }
+
+                @media (min-width:1300px) {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        @media (min-width: 760px) {
+            flex-direction: row;
+            max-width: 90%;
+        }
+
+        @media (min-width: 1360px) {
+            display: grid;
+            max-width: 70%;
+
+            .case1 {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            .case2 {
+                grid-row: 1;
+                grid-column: 2;
+            }
+
+            .case3 {
+                grid-row: 1;
+                grid-column: 3;
+            }
+
+            .case4 {
+                grid-row: 2;
+                grid-column: 1;
+            }
+
+            .case5 {
+                grid-row: 2;
+                grid-column: 2;
+            }
+
+            .case6 {
+                grid-row: 2;
+                grid-column: 3;
+            }
+        }
+    }
+
+    .pagination {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+
+        :first-child,
+        :last-child {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 7px;
+            background-color: #272626;
+            box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
+            border: none;
+        }
+
+        a {
+            color: #ff64d0;
+            text-decoration: none;
+
+            @media (min-width: 1200px) {
+                font-size: 24px;
+            }
+        }
+    }
+}

@@ -1,7 +1,6 @@
 @import "variables";
 @import "extends";
 @import "mixins";
-@import "footer";
 
 * {
     box-sizing: border-box;
@@ -12,6 +11,8 @@
 body {
     height: 100vh;
     background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -39,9 +40,9 @@ header {
 }
 
 main {
-    margin: 5%;
 
     .intro {
+        margin: 5%;
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -49,7 +50,7 @@ main {
         .titre {
             text-align: center;
             text-decoration: underline $brown;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             font-size: 32px;
         }
 
@@ -59,25 +60,36 @@ main {
 
         p {
             margin-top: 1rem;
+            margin-bottom: 1rem;
             font-size: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
         }
     }
 
-    article {
+    .recent {
+        border: solid 6px $blue;
+        border-radius: 6px;
+    }
+
+    .diffusion {
+        margin: 5%;
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
-        border: solid 4px $blue;
-        border-radius: 4px;
+        margin-top: 1rem;
         padding: 6px;
 
         .date {
             margin-bottom: .5rem;
             font-size: 22px;
-            text-align: center;
+            justify-content: center;
         }
 
-        h1 {
+        h1,
+        h2 {
             font-size: 30px;
             text-decoration: underline $brown;
             margin-bottom: 1rem;
@@ -85,6 +97,343 @@ main {
 
         .sommaire {
             font-size: 18px;
+        }
+    }
+
+    .ancien {
+        margin-top: 2.5rem;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 2rem;
+        border-bottom: solid 6px $green;
+
+        h2 {
+            margin: 5%;
+        }
+    }
+
+    .old {
+        border: solid 6px $green;
+        border-radius: 6px;
+    }
+
+    .nav_buttons {
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+
+        p,
+        .prev,
+        .next {
+            padding: 6px;
+        }
+
+        p {
+            margin-left: .25rem;
+            margin-right: .25rem;
+            border-bottom: black solid 2px;
+        }
+
+        .prev,
+        .next {
+            background-color: $brown;
+            border: black solid 1px;
+            border-radius: 4px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    padding: .5rem;
+    justify-content: space-between;
+
+    .card_double {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        padding: 6px;
+
+        .simple_card {
+            margin-right: .2rem;
+            padding: 2px;
+
+            img {
+                max-width: 2.5rem;
+            }
+        }
+
+        .simple_card2 {
+            padding: 2px;
+
+            img {
+                max-width: 2.5rem;
+            }
+
+        }
+    }
+
+    .card_double2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        a {
+            margin: .5rem;
+            color: white;
+            text-decoration: none;
+            border-bottom: $brown solid 2px;
+            border-radius: 2px;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+
+    header {
+        .logo {
+            max-width: 6rem;
+        }
+
+        .don_asso {
+            font-size: 18px;
+            max-width: 12rem;
+        }
+
+        .burger {
+            max-width: 4.5rem;
+        }
+    }
+
+    main {
+
+        .intro {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 3rem;
+
+            .titre {
+                margin-bottom: 2rem;
+                font-size: 46px;
+            }
+
+            p {
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+        }
+
+        .recent {
+            border: solid 6px $blue;
+            border-radius: 6px;
+        }
+
+        .ancien {
+            h2 {
+                font-size: 36px;
+            }
+        }
+
+        .diffusion {
+            padding: 12px;
+
+            h1,
+            img,
+            p {
+                display: flex;
+            }
+
+            h2 {
+                font-size: 38px;
+            }
+
+            .sommaire {
+                font-size: 24px;
+            }
+
+            .date {
+                font-size: 30px;
+            }
+
+            img {
+                margin: 3rem;
+                max-width: 35rem;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .nav_buttons {
+            font-size: 24px;
+        }
+    }
+
+    footer {
+        .card_double {
+
+            .simple_card {
+                img {
+                    max-width: 3rem;
+                }
+            }
+
+            .simple_card2 {
+                img {
+                    max-width: 3rem;
+                }
+            }
+        }
+
+        .card_double2 {
+            a {
+                margin: .3rem;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main {
+
+        .intro {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 3rem;
+
+            .titre {
+                margin-bottom: 4rem;
+                font-size: 50px;
+            }
+
+            p {
+                margin-top: 2rem;
+                margin-bottom: 5rem;
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 500;
+            }
+
+            img {
+                display: flex;
+                margin: 0;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                max-width: 40rem;
+            }
+        }
+
+        .recent {
+            border: solid 6px $blue;
+            border-radius: 6px;
+        }
+
+        .ancien {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 0;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .old {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-top: none;
+        }
+
+        .diffusion {
+            border-radius: 0;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 8%;
+            padding-top: 3%;
+            border-left: none;
+            border-right: none;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .date_img {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+                img {
+                    max-width: 30rem;
+                    transform: translateX(0);
+                    margin: 0;
+                }
+            }
+
+            .descript {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 50%;
+                // margin-left: 25%;
+
+                p {
+                    display: flex;
+                }
+            }
+
+            h1,
+            img,
+
+            h2 {
+                font-size: 40px;
+            }
+
+            .sommaire {
+                font-size: 28px;
+            }
+
+            .date {
+                font-size: 36px;
+            }
+        }
+
+        .nav_buttons {
+            font-size: 24px;
+        }
+    }
+
+    footer {
+        .card_double {
+
+            .simple_card {
+                img {
+                    max-width: 3rem;
+                }
+            }
+
+            .simple_card2 {
+                img {
+                    max-width: 3rem;
+                }
+            }
+        }
+
+        .card_double2 {
+            a {
+                margin: .3rem;
+                font-size: 20px;
+            }
         }
     }
 }
