@@ -2,8 +2,9 @@
     text-align:center;
     text-transform: uppercase;
     font-size: $size;
-    margin-top:15px;
-    position: relative;
+    margin:15px;
+   font-family: $fontH1;
+   font-weight: bold;
 }
 @mixin underline($width, $right, $bottom){
     content:"";

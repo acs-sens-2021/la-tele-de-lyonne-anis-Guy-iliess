@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 15px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  -webkit-text-decoration: underline #f25c19;
+          text-decoration: underline #f25c19;
+  margin: 15px;
+}
+
+h2 {
+  color: #68af21;
+  margin: 10px;
+}
+
+p {
+  margin: 20px;
+}
+
+ul {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-left: 25px;
+  }
+  p {
+    margin-left: 35px;
+  }
+}
+/*# sourceMappingURL=Adhérer.css.map */

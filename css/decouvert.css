@@ -1,149 +1,112 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
-  background-color: white;
+  background-color: #100E0F;
 }
 
 h1 {
+  font-weight: bold;
+  color: white;
   text-align: center;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 25px;
 }
 
-.search {
-  position: relative;
-  background-color: #FFA12E;
-  border-radius: 15px;
-  padding: 20px;
+.card1 {
+  background-color: white;
+  -webkit-box-shadow: -2px 2px 5px #ff64d0;
+          box-shadow: -2px 2px 5px #ff64d0;
   margin: 50px 15px 0 15px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.search .ligne {
+.card1 > h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.card1 > img {
+  height: 30%;
+  width: 85%;
+  border-radius: 15px;
+  border: solid 1px black;
+}
+
+.card1 > p {
+  text-align: start;
+  margin: 10px 25px 0 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: .7rem;
+}
+
+.card1 > button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #242222;
+  color: #ff64d0;
+  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 18px;
+  border: none;
+  width: 44%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15px;
 }
 
-.search .ligne .vert {
-  background-color: green;
-  height: 3px;
-  width: 26%;
+button > img {
+  width: 20px;
   margin-right: 5px;
 }
 
-.search .ligne .bleu {
-  background-color: blue;
-  height: 3px;
-  width: 26%;
-}
-
-.search img {
-  position: absolute;
-  width: 8%;
-  margin-top: 6px;
-  margin-left: 255px;
-}
-
-.search input {
-  border-radius: 50px;
-  width: 100%;
-  padding: 10px;
-}
-
-.conteneur1vert {
-  margin: 50px 15px 0 15px;
-  background-color: #68af21;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.conteneur1vert .bande1 {
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  display: -ms-grid;
-  display: grid;
-  grid-template: 1fr 2fr;
-  row-gap: 5px;
-}
-
-.conteneur1vert .bande1 img {
-  width: 100%;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  margin: 5px;
-}
-
-.conteneur1vert .bande1 h2 {
-  text-align: center;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  font-size: 22px;
-}
-
-.conteneur1vert .bande1 p {
-  text-align: center;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 @media screen and (min-width: 768px) {
+  .card1 > p {
+    font-size: 1rem;
+  }
+  .card1 > img {
+    margin-top: 20px;
+  }
   .cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 2fr;
-        grid-template-columns: 2fr 2fr;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
   }
-  .search .ligne {
-    margin-bottom: 20px;
-  }
-  .search .ligne .vert {
-    width: 11%;
-  }
-  .search .ligne .bleu {
-    width: 11%;
-  }
-  .search img {
-    width: 4%;
-    margin-left: 654px;
+  button > img {
+    margin-left: 10px;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 2fr 2fr;
-        grid-template-columns: 2fr 2fr 2fr;
+    -ms-grid-columns: (2fr)[3];
+        grid-template-columns: repeat(3, 2fr);
+    width: 75%;
+    margin: auto;
   }
-  .search {
-    width: 50%;
-    margin-left: 25%;
+  .card1 {
+    height: 80%;
   }
-  .search .ligne {
-    margin-bottom: 30px;
-  }
-  .search .ligne .vert {
-    width: 8%;
-  }
-  .search .ligne .bleu {
-    width: 8%;
-  }
-  .search img {
-    width: 30px;
-    margin-left: 112rem;
-  }
-  .search .input {
-    padding-bottom: 50px;
+  .card1 > p {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=decouvert.css.map */
