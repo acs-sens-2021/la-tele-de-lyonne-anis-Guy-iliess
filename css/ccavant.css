@@ -517,7 +517,11 @@ main .dual_card .prez_card {
   }
 }
 
+<<<<<<< HEAD
 main .dual_card .prez_card video {
+=======
+main .dual_card .prez_card img {
+>>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
   border-radius: 5%;
   margin-bottom: 2%;
 }

@@ -2,6 +2,7 @@
 @import "extends";
 @import "mixins";
 @import "navbar";
+@import "footer";
 
 * {
     box-sizing: border-box;
@@ -12,7 +13,6 @@
 body {
     height: 100vh;
     background-color: #100e0f;
-    color: #F5F5F5;
 }
 
 h1 {
@@ -26,11 +26,8 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 
-button {
-    font-weight: bold;
-}
-
 main {
+    color: #F5F5F5;
 
     article {
 
@@ -210,12 +207,6 @@ main {
             }
         }
     }
-}
-
-footer {
-    display: flex;
-    background-color: #F5F5F5;
-    padding: .5rem;
 }
 
 @media (min-width: 760px) {

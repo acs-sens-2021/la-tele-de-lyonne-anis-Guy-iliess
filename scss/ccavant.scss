@@ -165,5 +165,15 @@ main {
                 font-size: 24px;
             }
         }
+
+        .nb_page {
+            color: #F5F5F5;
+            text-decoration: none;
+            margin: .1rem;
+
+            @media (min-width: 1200px) {
+                font-size: 24px;
+            }
+        }
     }
 }
