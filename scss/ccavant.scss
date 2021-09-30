@@ -82,7 +82,7 @@ main {
                 margin: 3%;
             }
 
-            img {
+            video {
                 border-radius: 5%;
                 margin-bottom: 2%;
             }
@@ -160,6 +160,16 @@ main {
         a {
             color: #ff64d0;
             text-decoration: none;
+
+            @media (min-width: 1200px) {
+                font-size: 24px;
+            }
+        }
+
+        .nb_page {
+            color: #F5F5F5;
+            text-decoration: none;
+            margin: .1rem;
 
             @media (min-width: 1200px) {
                 font-size: 24px;

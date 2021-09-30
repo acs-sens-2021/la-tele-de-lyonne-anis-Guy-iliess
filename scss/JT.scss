@@ -57,14 +57,11 @@ main {
     align-items: center;
     max-width: 80%;
     margin: auto;
-    margin-top: 5%;
-    margin-bottom: 10%;
 
     @media (min-width: 760px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 5%;
-        row-gap: 1.5%;
         max-width: 90%;
         margin: auto;
         padding: 0;
@@ -143,40 +140,67 @@ main {
     article {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 5%;
-        padding: 2rem;
-        box-shadow: inset 5px 5px 10px #F5F5F5, inset -5px -5px 10px #F5F5F5;
+        padding-bottom: 2rem;
+        border-bottom: #F5F5F5 solid 4px;
 
-        h2 {
-            margin: auto;
+        .date {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 4rem;
+                margin: .5rem;
+
+                @media (min-width: 760px) {
+                    max-width: 6rem;
+                }
+            }
+
+            p {
+                margin: .5rem;
+
+                @media (min-width: 760px) {
+                    font-size: 28px;
+                }
+
+                @media (min-width: 1300px) {
+                    font-size: 30px;
+                }
+            }
         }
 
         img {
-            max-width: 14rem;
-        }
-
-        .banner {
             border-radius: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
         }
 
         p {
-            margin-top: 5%;
-            margin-bottom: 5%;
-
             @media (min-width: 1300px) {
                 font-size: 22px;
             }
         }
 
-        .date {
-            margin-top: 5%;
-            margin-bottom: 5%;
-            text-align: center;
+        button {
+            padding: .8rem;
+            border-radius: 15px;
+            margin-top: 1rem;
+            background-color: #272626;
+            box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
+            border: none;
+            margin-left: 50%;
+            transform: translateX(-50%);
 
-            @media (min-width: 1300px) {
-                font-size: 22px;
+            a {
+                color: #ff64d0;
+                text-decoration: none;
+
+                @media (min-width: 1300px) {
+                    font-size: 24px;
+                }
             }
         }
     }
