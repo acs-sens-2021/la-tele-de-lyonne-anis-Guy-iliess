@@ -211,13 +211,14 @@ main {
 
 @media (min-width: 760px) {
 
-    figcaption,
-    button,
-    p {
-        font-size: 22px;
-    }
-
     main {
+
+        figcaption,
+        button,
+        p {
+            font-size: 22px;
+        }
+
         article {
             .titre {
                 font-size: 64px;
