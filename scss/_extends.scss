@@ -18,11 +18,8 @@
         max-height: 4rem;
         max-width: 7rem;
         border-radius: 20px;
-        background: radial-gradient( white, grey);
-        border:none;
-        border-top: 2px solid  white;
-        border-right: 2px solid white;
-        box-shadow: inset 2px 2px 5px $black, inset -2px -2px 5px $black ;
+        border: #100e0f solid 1px;
+        background: linear-gradient(90deg, rgba(106, 102, 101, .7) 26%, rgba(0, 0, 0, .1) 100%);
         cursor: pointer;
 }
 %flexCenter{
