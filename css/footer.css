@@ -93,6 +93,7 @@ footer .lien a {
   }
   footer .contenu .logo-footer {
     margin: auto;
+    width: 45%;
   }
   footer .news {
     display: -webkit-box;
@@ -108,11 +109,11 @@ footer .lien a {
   }
   footer .news input {
     height: 40px;
-    width: 100%;
+    width: 50%;
     border-radius: 50px;
   }
   footer .news button {
-    width: 50%;
+    width: 30%;
   }
   footer a {
     margin-bottom: 25px;
