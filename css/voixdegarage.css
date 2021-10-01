@@ -6,7 +6,11 @@
 }
 
 header button {
+<<<<<<< HEAD
   padding: .5rem;
+=======
+  padding: .4rem;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
@@ -203,7 +207,11 @@ header .burger {
 }
 
 header button {
+<<<<<<< HEAD
   padding: .5rem;
+=======
+  padding: .4rem;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
@@ -339,6 +347,10 @@ footer .lien a {
   }
   footer .contenu .logo-footer {
     margin: auto;
+<<<<<<< HEAD
+=======
+    width: 45%;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
   }
   footer .news {
     display: -webkit-box;
@@ -354,11 +366,19 @@ footer .lien a {
   }
   footer .news input {
     height: 40px;
+<<<<<<< HEAD
     width: 100%;
     border-radius: 50px;
   }
   footer .news button {
     width: 50%;
+=======
+    width: 50%;
+    border-radius: 50px;
+  }
+  footer .news button {
+    width: 30%;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
   }
   footer a {
     margin-bottom: 25px;
@@ -452,7 +472,11 @@ footer .lien a {
 }
 
 header button {
+<<<<<<< HEAD
   padding: .5rem;
+=======
+  padding: .4rem;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;

@@ -5,8 +5,23 @@
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
 header button {
-  padding: .5rem;
+  padding: .4rem;
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
@@ -26,8 +41,23 @@ header button {
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
 header button {
-  padding: .5rem;
+  padding: .4rem;
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
@@ -83,6 +113,7 @@ footer .logo-footer img {
 
 footer .news p {
   text-align: center;
+<<<<<<< HEAD
 }
 
 footer .news input {
@@ -108,6 +139,33 @@ footer button {
   margin-bottom: 40px;
 }
 
+=======
+}
+
+footer .news input {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 15px;
+  border: solid 2px black;
+  text-align: center;
+  height: 35px;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer button {
+  font-family: 'Poppins', sans-serif;
+  background: #6a6665;
+  background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(106, 102, 101, 0.7)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(90deg, rgba(106, 102, 101, 0.7) 26%, rgba(0, 0, 0, 0.1) 100%);
+  border: solid 1px black;
+  width: 50%;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
 footer .lien {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +182,8 @@ footer .lien a {
   color: black;
   margin-bottom: 10px;
   text-decoration: none;
+<<<<<<< HEAD
+=======
 }
 
 @media screen and (min-width: 740px) {
@@ -135,6 +195,7 @@ footer .lien a {
   }
   footer .contenu .logo-footer {
     margin: auto;
+    width: 45%;
   }
   footer .news {
     display: -webkit-box;
@@ -150,11 +211,11 @@ footer .lien a {
   }
   footer .news input {
     height: 40px;
-    width: 100%;
+    width: 50%;
     border-radius: 50px;
   }
   footer .news button {
-    width: 50%;
+    width: 30%;
   }
   footer a {
     margin-bottom: 25px;
@@ -238,12 +299,134 @@ footer .lien a {
     width: 6%;
     padding-bottom: 30px;
   }
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
+}
+
+@media screen and (min-width: 740px) {
+  footer img {
+    width: 20%;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  footer .contenu .logo-footer {
+    margin: auto;
+  }
+  footer .news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .news input {
+    height: 40px;
+    width: 100%;
+    border-radius: 50px;
+  }
+  footer .news button {
+    width: 50%;
+  }
+  footer a {
+    margin-bottom: 25px;
+    font-size: 1rem;
+  }
+}
+
+<<<<<<< HEAD
+@media screen and (min-width: 1024px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+  }
+  footer .contenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+  }
+  footer .contenu .logo {
+    width: 20%;
+  }
+  footer .contenu .logo .logo-f {
+    width: 100%;
+  }
+  footer .news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+    gap: 20px;
+  }
+  footer .news .input {
+    width: 70%;
+  }
+  footer .news .button {
+    width: 40%;
+  }
+  footer .lien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+  footer .lien a {
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+  footer .logo-footer img {
+    width: 6%;
+    padding-bottom: 30px;
+  }
 }
 
 header {
   background-color: #F5F5F5;
   display: -ms-grid;
   display: grid;
+=======
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -251,10 +434,24 @@ header {
 }
 
 header button {
+<<<<<<< HEAD
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 2;
   grid-column: 2;
+=======
+  padding: .4rem;
+  max-height: 4rem;
+  max-width: 7rem;
+  border-radius: 20px;
+  background: radial-gradient(white, grey);
+  border: none;
+  border-top: 2px solid  white;
+  border-right: 2px solid white;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+>>>>>>> 8f2a64c9aadae093e46a8eb7ad8d65dc4c09bf6f
 }
 
 header .txt_head {
