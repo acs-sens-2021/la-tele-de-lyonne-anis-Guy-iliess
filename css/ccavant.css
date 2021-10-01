@@ -10,12 +10,9 @@ header button {
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
-  background: radial-gradient(white, grey);
-  border: none;
-  border-top: 2px solid  white;
-  border-right: 2px solid white;
-  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
-          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+  border: #100e0f solid 1px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(106, 102, 101, 0.7)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(90deg, rgba(106, 102, 101, 0.7) 26%, rgba(0, 0, 0, 0.1) 100%);
   cursor: pointer;
 }
 
@@ -207,12 +204,9 @@ header button {
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
-  background: radial-gradient(white, grey);
-  border: none;
-  border-top: 2px solid  white;
-  border-right: 2px solid white;
-  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
-          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+  border: #100e0f solid 1px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(106, 102, 101, 0.7)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(90deg, rgba(106, 102, 101, 0.7) 26%, rgba(0, 0, 0, 0.1) 100%);
   cursor: pointer;
 }
 
@@ -457,12 +451,9 @@ header button {
   max-height: 4rem;
   max-width: 7rem;
   border-radius: 20px;
-  background: radial-gradient(white, grey);
-  border: none;
-  border-top: 2px solid  white;
-  border-right: 2px solid white;
-  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
-          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.8);
+  border: #100e0f solid 1px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(106, 102, 101, 0.7)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(90deg, rgba(106, 102, 101, 0.7) 26%, rgba(0, 0, 0, 0.1) 100%);
   cursor: pointer;
 }
 
@@ -535,7 +526,6 @@ header button {
 body {
   height: 100vh;
   background-color: #100e0f;
-  color: #F5F5F5;
 }
 
 .titre {
@@ -570,8 +560,8 @@ h1 {
   font-family: 'Roboto Slab', serif;
 }
 
-button {
-  font-weight: bold;
+main {
+  color: #F5F5F5;
 }
 
 @media (min-width: 1360px) {

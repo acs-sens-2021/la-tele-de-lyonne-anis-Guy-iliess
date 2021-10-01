@@ -307,11 +307,21 @@ header .logo {
   max-width: 4rem;
 }
 
+<<<<<<< HEAD
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 15px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+=======
 @media (min-width: 1200px) {
   header .logo {
     margin: 5%;
     max-width: 6.5rem;
   }
+>>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
 }
 
 header .burger {

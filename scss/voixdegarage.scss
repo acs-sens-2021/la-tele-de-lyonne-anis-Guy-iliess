@@ -12,7 +12,6 @@
 body {
     height: 100vh;
     background-color: #100e0f;
-    color: #F5F5F5;
 }
 
 .titre {
@@ -47,9 +46,6 @@ h1 {
     font-family: 'Roboto Slab', serif;
 }
 
-button {
-    font-weight: bold;
-}
 
 main {
     display: flex;
@@ -57,14 +53,12 @@ main {
     align-items: center;
     max-width: 80%;
     margin: auto;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    color: #F5F5F5;
 
     @media (min-width: 760px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 5%;
-        row-gap: 1.5%;
         max-width: 90%;
         margin: auto;
         padding: 0;
