@@ -160,8 +160,6 @@ header .burger {
   }
 }
 
-<<<<<<< HEAD
-=======
 header button {
   padding: .5rem;
   max-height: 4rem;
@@ -376,7 +374,6 @@ footer .lien a {
   }
 }
 
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -387,10 +384,6 @@ footer .lien a {
 body {
   height: 100vh;
   background-color: #100e0f;
-<<<<<<< HEAD
-  color: #F5F5F5;
-=======
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
 }
 
 h1 {
@@ -404,13 +397,8 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 
-<<<<<<< HEAD
-button {
-  font-weight: bold;
-=======
 main {
   color: #F5F5F5;
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
 }
 
 main article .titre {
@@ -549,7 +537,6 @@ main .vids .Flex_container figure img {
 main .vids .Flex_container figure figcaption {
   color: #100e0f;
   padding-top: .5rem;
-<<<<<<< HEAD
 }
 
 main .vids button {
@@ -565,23 +552,6 @@ main .vids button {
   border: none;
 }
 
-=======
-}
-
-main .vids button {
-  margin-top: 1rem;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding: .5rem;
-  border-radius: 20px;
-  background-color: #272626;
-  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-  border: none;
-}
-
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
 main .vids button a {
   color: #ff64d0;
   text-decoration: none;
@@ -650,7 +620,6 @@ main .partenaires .logo_part img {
 
 main .partenaires .logo_part .marg_part {
   margin-right: 1.5rem;
-<<<<<<< HEAD
 }
 
 main .partenaires button {
@@ -669,34 +638,6 @@ main .partenaires button {
 main .partenaires button a {
   color: #ff64d0;
   text-decoration: none;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #F5F5F5;
-  padding: .5rem;
-=======
-}
-
-main .partenaires button {
-  margin-top: 2rem;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding: .5rem;
-  background-color: #272626;
-  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-  border: none;
-  border-radius: 20px;
-}
-
-main .partenaires button a {
-  color: #ff64d0;
-  text-decoration: none;
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
 }
 
 @media (min-width: 760px) {
@@ -721,7 +662,6 @@ main .partenaires button a {
   }
   main article .card_banner p {
     font-size: 24px;
-<<<<<<< HEAD
   }
   main .vids h1 {
     font-size: 38px;
@@ -743,29 +683,6 @@ main .partenaires button a {
     padding-left: 5%;
     padding-right: 5%;
   }
-=======
-  }
-  main .vids h1 {
-    font-size: 38px;
-  }
-  main .vids .Flex_container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .vids .Flex_container figure {
-    max-width: 48%;
-    padding-bottom: 0;
-  }
-  main .vids .Flex_container figure figcaption {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
   main .partenaires .titre_part {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -797,23 +714,15 @@ main .partenaires button a {
   main {
     width: 75%;
     margin: auto;
-<<<<<<< HEAD
   }
   main article .titre {
     font-size: 98px;
   }
-=======
-  }
-  main article .titre {
-    font-size: 98px;
-  }
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
   main article .sous_titre {
     margin: 20%;
     margin-top: 5%;
     margin-bottom: 2%;
     font-size: 60px;
-<<<<<<< HEAD
   }
   main article .card_banner {
     margin: 15%;
@@ -823,17 +732,6 @@ main .partenaires button a {
         -ms-flex-align: start;
             align-items: start;
   }
-=======
-  }
-  main article .card_banner {
-    margin: 15%;
-    margin-top: 0;
-    margin-bottom: 5%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
->>>>>>> 739890b173823fdaad4f05d828b3b043b5107856
   main article .card_banner p {
     font-size: 28px;
   }
