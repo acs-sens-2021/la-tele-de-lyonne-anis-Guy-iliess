@@ -2,49 +2,97 @@
 @import "extends";
 @import "mixins";
 
-.modal{
-   @extend %flexCenter;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(196, 19, 19);
-    
-    
-    
-}
-.modal-warrper{
-    @extend %flexCenterColumn;
-   
-    h2{
-        background-color: $blue;
-        width:100%;
-        text-align: center;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        
-    }
-    form{
-        @extend %flexCenterColumn;
-        input{
-            margin-bottom: 10px;
-            width: 80%;
-        }
-        textarea{
-            width: 80%;
-        }
-        .browse{
-            align-items: flex-start;
-            margin-top: 20px;
-            span{
-                color: white;
-                
-            }
-            button{
-                background-color: $green;
+main {
 
-            }
-           
-            
-        }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 3;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
 
+        .modal-content {
+            background-color: #242222;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #888;
+            width: 80%;
+
+            .titre {
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+            }
+
+            .text_areas {
+                margin: auto;
+                max-width: 90%;
+
+                textarea {
+                    max-width: 100%;
+                    padding: .5rem;
+                    margin: .5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    border-radius: 5px;
+                    resize: none;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                margin: auto;
+                max-width: 90%;
+                margin-top: 1rem;
+
+                p {
+                    align-self: center;
+                }
+
+                button {
+                    background-color: #242222;
+                    color: #ff64d0;
+                    padding: .5rem;
+                    margin: .5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    border-radius: 5px;
+                }
+
+                .parcourir {
+                    margin-left: .5rem;
+                }
+            }
+
+            .send {
+                flex-direction: row-reverse;
+                margin-top: 1rem;
+            }
+
+            .close {
+                color: #fff;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+
+                &:hover,
+                &:focus {
+                    color: #ff64d0;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+
+            .tel {
+                margin-top: 1rem;
+                font-size: 12px;
+            }
+        }
     }
 }

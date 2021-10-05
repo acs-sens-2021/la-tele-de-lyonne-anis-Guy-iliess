@@ -12,6 +12,7 @@
 
 body {
     @extend %body;
+   
 }
 
 main {
@@ -146,7 +147,7 @@ h2 {
     display: flex;
     margin-top: 35px;
     margin-bottom: 15px;
-    text-align: center;
+   justify-content: center;
     align-items: center;
 
     @media (min-width: 760px) {

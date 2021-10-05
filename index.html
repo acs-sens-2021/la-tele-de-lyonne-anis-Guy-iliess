@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
     <link rel="icon" href="./img/logo-placeholder-png.png">
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/nav.js" defer></script>
     <link rel="stylesheet" href="./css/index.css">
     <title>Accueil</title>
 </head>
@@ -21,19 +23,19 @@
         </a>
         <div class="txt_head">
             <div class="card_head">
-                <p class="menus">
-                    <a href="./ccavant.html">A Découvert</a>
-                    <a href="./ccavant.html">C'était comment avant ?</a>
-                    <a href="./ccavant.html">Images de Pros</a>
-                    <a href="./ccavant.html">Le JT</a>
-                    <a href="./ccavant.html">Restons Couverts</a>
-                    <a href="./ccavant.html">Top Culture</a>
-                    <a href="./ccavant.html">Voix de Garage</a>
-                </p>
+                <ul class="menus">
+                    <li><a href="decouvert.html">A Découvert</a></li>
+                    <li><a href="./ccavant.html">C'était comment avant ?</a></li>
+                    <li><a href="./imagePro.html">Images de Pros</a></li>
+                    <li><a href="./JT.html">Le JT</a></li>
+                    <li><a href="./couvert.html">Restons Couverts</a></li>
+                    <li><a href="./topCulture.html">Top Culture</a></li>
+                    <li><a href="./VoixDeGarage.html">Voix de Garage</a></li>
+                </ul>
             </div>
         </div>
-        <button class="don_asso">Adhèrez à l'association !</button>
-        <img src="./img/burger_open.svg" alt="burger" class="burger mobil" width="100%">
+        <a href="Adhérer.html" class="don_asso"> Adhèrez à l'association !</a>
+        <button class="burger"><span></span></button>
     </header>
 
     <main>
@@ -98,6 +100,28 @@
             </div>
             <button><a href="">Découvrez nos partenaires</a></button>
         </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="titre">Mon Message :</h1>
+                <div class="text_areas">
+                    <textarea name="nom" id="nom" cols="50" rows="1" placeholder="Mon nom ..."></textarea>
+                    <textarea name="mail" id="mail" cols="50" rows="1" placeholder="Mon mail ..."></textarea>
+                    <textarea name="sujet" id="sujet" cols="50" rows="1" placeholder="Mon sujet ..."></textarea>
+                    <textarea name="texte" id="text" cols="50" rows="10"
+                        placeholder="Une question, une remarque, une idée de reportage ou une suggestion pour le site ? Vous avez un projet et vous souhaitez nous en parler ?"></textarea>
+                </div>
+                <div class="buttons">
+                    <p>Mon fichier</p>
+                    <button class="parcourir">Parcourir</button>
+                </div>
+                <div class="buttons send">
+                    <button>Envoyer</button>
+                </div>
+                <p class="tel">**Vous pouvez également nous contacter par téléphone au : 06 07 13 07 29</p>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -125,7 +149,7 @@
         </div>
 
         <div class="lien">
-            <a href="">Nous contacter</a>
+            <a class="myBtn">Nous contacter</a>
             <a href="">Cookies</a>
             <a href="">Mentions légales</a>
         </div>
