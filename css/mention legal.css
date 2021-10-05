@@ -35,7 +35,7 @@ footer .logo-footer {
 }
 
 footer .logo-footer img {
-  width: 10%;
+  width: 50%;
   margin-top: 15px;
 }
 
@@ -357,6 +357,7 @@ header .txt_head .card_head .menus {
   right: 0;
   left: 0;
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 @media (min-width: 760px) {
@@ -405,6 +406,9 @@ header .txt_head .card_head .menus li a {
     line-height: normal;
     letter-spacing: normal;
   }
+}
+
+@media (min-width: 1300px) {
   header .txt_head .card_head .menus li a:hover {
     background-color: #00AF04;
   }

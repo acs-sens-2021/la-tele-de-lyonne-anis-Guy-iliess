@@ -97,6 +97,7 @@ header {
                 right: 0;
                 left: 0;
                 background-color: #F5F5F5;
+                overflow-x: hidden;
 
                 @media(min-width:760px) {
                     top: 11vh;
@@ -129,11 +130,14 @@ header {
                             font-size: 1rem;
                             line-height: normal;
                             letter-spacing: normal;
+                        }
 
-                            &:hover {
+                        &:hover {
+                            @media(min-width:1300px) {
                                 background-color: #00AF04;
                             }
                         }
+
 
                         @media(min-width:1600px) {
 
@@ -195,6 +199,7 @@ header {
     }
 
 }
+
 .show-nav {
     .txt_head {
         .card_head {
