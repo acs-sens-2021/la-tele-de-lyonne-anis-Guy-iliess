@@ -1,3 +1,10 @@
+
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "navbar";
+@import "footer";
+
 * {
     margin: 0;
     padding: 0;
@@ -15,83 +22,97 @@ h1 {
     margin-top: 25px;
 }
 
-.card1 {
+
+.card1{
     background-color: white;
     box-shadow: -2px 2px 5px #02ce05;
-    // height: 800px;
     margin: 50px 15px 0 15px;
     border-radius: 5px;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-.card1>h2 {
-    color: black;
-    text-align: center;
+    padding-bottom: 10px;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    h2 {
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+    }
+    img {
+        height: 100%;
+        width: 80%;
+        border-radius: 15px;
+        border: solid 1px black;
+    }
+    p{
+        text-align: start;
+        margin: 10px 25px 0 35px;
+        font-family: 'Poppins', sans-serif;
+        font-size: .7rem;
+    }
+    
+    button {
+        font-family: 'Poppins', sans-serif;
+        background-color: #242222;
+        color: #02ce05;
+        box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+        margin-top: 20px;
+        font-weight: bold;
+        border-radius: 18px;
+        border: none;
+        width: 44%;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        img {
+        width: 20px;
+        margin-right: 5px;
+    }
+    
+    
+    }
+    
 }
 
-.card1>img {
-    height: 30%;
-    width: 85%;
-    border-radius: 15px;
-    border: solid 1px black;
-}
 
-.card1>p {
-    text-align: start;
-    margin: 10px 25px 0 25px;
-    font-family: 'Poppins', sans-serif;
-    font-size: .7rem;
-}
-
-.card1>button {
-    font-family: 'Poppins', sans-serif;
-    background-color: #242222;
-    color: #02ce05;
-    box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
-    margin-top: 20px;
-    font-weight: bold;
-    border-radius: 18px;
-    border: none;
-    width: 44%;
-    padding: 10px;
-
-    margin-bottom: 10px;
-}
 
 button {
     margin: auto;
     display: flex;
 }
 
-button>img {
-    width: 20px;
-    margin-right: 5px;
-}
 
 // fin de la card1
-@media screen and (min-width:768px) {
-    .card1>p {
-        font-size: 1rem;
-    }
-
-    .card1>img {
-        margin-top: 20px;
-    }
-
+@media screen and (min-width:768px){
+    
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
+        width: 90%;
+        margin: auto;
+        .card1{
+            height: 80%;
+            
+            p{
+                font-size: 0.9rem;
+            }
+            img {
+                height: 20%;
+            }
+            button{
+             align-items: center;
+             img{
+                
+                 width: 15%;
+                 height: 100%;
+             }          
+            }
+        }
 
     }
 
-    button>img {
-        margin-left: 10px;
-    }
+    
 
 }
 
@@ -100,14 +121,18 @@ button>img {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         width: 75%;
+        
         margin: auto;
     }
 
     .card1 {
-        height: 80%;
+        height:85%;
       
     }
     .card1>p{
         margin-top: 30px;
+    }
+    .card1>img{
+        height: 30%;
     }
 }
