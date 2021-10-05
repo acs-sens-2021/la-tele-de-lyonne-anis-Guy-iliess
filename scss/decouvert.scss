@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #100E0F;
+    @extend %body;
 }
 
 h1 {

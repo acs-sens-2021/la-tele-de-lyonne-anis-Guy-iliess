@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,6 +339,12 @@ header .txt_head .card_head .menus li a {
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +581,12 @@ footer .lien a {
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -633,11 +651,6 @@ footer .lien a {
 
 .modal-warrper form .browse button {
   background-color: #68af21;
-}
-
-body {
-  height: 100vh;
-  background-color: #100e0f;
 }
 
 .titre {
