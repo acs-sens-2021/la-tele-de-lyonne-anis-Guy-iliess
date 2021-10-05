@@ -1,6 +1,7 @@
 @import "variables";
 @import "extends";
 @import "mixins";
+@import "modal";
 @import "navbar";
 @import "footer";
 
@@ -11,8 +12,7 @@
 }
 
 body {
-    height: 100vh;
-    background-color: #100e0f;
+    @extend %body;
 }
 
 h1 {
@@ -204,6 +204,16 @@ main {
             a {
                 color: #ff64d0;
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    .lien {
+        .myBtn {
+            &:hover {
+                cursor: pointer;
             }
         }
     }
