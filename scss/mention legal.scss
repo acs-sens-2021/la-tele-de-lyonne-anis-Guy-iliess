@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #100E0F;
+    @extend %body;
 }
 .conteneur{
     color: #f5f5f5;

@@ -5,11 +5,23 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
 }
 
 footer {
@@ -504,11 +516,6 @@ header .txt_head .card_head .menus li a {
 .show-nav .burger span::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-body {
-  min-height: 100vh;
-  background: #100E0F;
 }
 
 h1 {

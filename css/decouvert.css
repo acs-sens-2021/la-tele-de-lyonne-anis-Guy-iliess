@@ -1,3 +1,9 @@
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 header {
   background-color: #F5F5F5;
   display: -ms-grid;
@@ -291,6 +297,12 @@ header .txt_head .card_head .menus li a {
           transform: rotate(-45deg);
 }
 
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 footer {
   background-color: #F5F5F5;
   display: -webkit-box;
@@ -495,10 +507,6 @@ footer .lien a {
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: #100E0F;
 }
 
 h1 {
