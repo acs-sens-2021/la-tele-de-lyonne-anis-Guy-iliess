@@ -32,8 +32,26 @@ main{
     ul{
     margin-left: 50px;
     }
-
+    
 }
+ 
+        
+        .formulaire{
+            border: solid 3px green;
+            border-radius: 15px;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 15px;
+            div{
+                margin: 15px;
+                h2{
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    
 
 
 
@@ -48,6 +66,23 @@ main{
            margin-left: 35px;
        }
     }
+    
+       
+
+        .formulaire{
+            display: flex;
+            justify-content: center;
+            div{
+                margin: 15px;
+                display: flex;
+                flex-direction: column;
+              h2{
+                  margin-bottom: 15px;
+              }
+            }
+        }
+    
+    
   
 }
 
@@ -56,5 +91,16 @@ main{
     main{
        width: 50%;
      
+    }
+    .formulaire{
+       width: 50%;
+        div{
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+          h2{
+              margin-bottom: 15px;
+          }
+        }
     }
 }

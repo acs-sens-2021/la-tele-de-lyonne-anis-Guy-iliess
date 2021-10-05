@@ -24,7 +24,7 @@ footer {
         justify-content: space-evenly;
 
         img {
-            width: 50%;
+            width: 10%;
             margin-top: 15px;
         }
     }
@@ -149,6 +149,7 @@ footer {
     }
 
     .news {
+        justify-content: center;
         display: flex;
         flex-direction: column;
         flex: 0 0 35%;  
