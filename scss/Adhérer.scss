@@ -3,7 +3,7 @@
 @import "mixins";
 @import "navbar";
 @import "footer";
-@import "modal";
+
 *{
     margin: 0;
     padding: 0;
@@ -16,8 +16,7 @@ body{
 main{
     color: white;
     h1{
-        text-align: center;
-        margin: 15px;
+       @extend %title;
     }
     h2{
         text-align: center;
