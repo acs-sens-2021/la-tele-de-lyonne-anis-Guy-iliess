@@ -87,12 +87,6 @@ header .don_asso {
   grid-column: 2;
 }
 
-header .don_asso:hover {
-  background-color: #00AF04;
-  -webkit-transition: .5 ease-in-out;
-  transition: .5 ease-in-out;
-}
-
 @media (min-width: 760px) {
   header .don_asso {
     font-size: 1.3rem;
@@ -143,7 +137,6 @@ header .don_asso:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 3rem;
   }
 }
 
@@ -214,7 +207,7 @@ header .txt_head .card_head .menus li a {
     margin-right: 3rem;
     color: black;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: normal;
     letter-spacing: normal;
   }
@@ -288,6 +281,9 @@ header .txt_head .card_head .menus li a {
 .show-nav .txt_head .card_head .menus {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  display: block;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .show-nav .burger span {
@@ -302,12 +298,6 @@ header .txt_head .card_head .menus li a {
 .show-nav .burger span::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-body {
-  height: 100vh;
-  background-color: #100e0f;
-  overflow-x: hidden;
 }
 
 footer {
