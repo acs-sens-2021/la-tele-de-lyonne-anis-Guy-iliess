@@ -1,6 +1,7 @@
 @import "variables";
 @import "extends";
 @import "mixins";
+
 footer {
     background-color: #F5F5F5;
     display: flex;
@@ -60,7 +61,8 @@ footer {
 
     .lien {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        justify-content: space-around;
         width: 100%;
 
         a {
@@ -73,119 +75,116 @@ footer {
     }
 
 }
+
 @media screen and (min-width:740px) {
-footer {
-      
-    img {
-        width: 20%;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .contenu {
-        .logo-footer {
-            margin: auto;
-            
-            width: 45%;
-        }
-    }
-
-    .news {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        input {
-            height: 40px;
-            width: 50%;
-            border-radius: 50px;
-        }
-
-        button {
-            width: 30%;
-        }
-    }
-
-    a {
-        margin-bottom: 25px;
-        font-size: 1rem;
-    }
-
-}
-
-}
-@media screen and (min-width:1024px) {
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-
-
-
-    .contenu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0 0 45%;
-
-        .logo {
-
-            width: 20%;
-
-            .logo-f {
-                width: 100%;
-
-
-            }
-        }
-
-
-
-
-
-    }
-
-    .news {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 35%;  
-            gap: 20px;
-
-            .input{
-                width: 70%;
-            }
-            .button{
-                width: 40%;
-            }
-    }
-
-
-
-    .lien {
-        display: flex;
-        flex-direction: column;
-        width: max-content;
-        flex: 0 0 20%;
-
-        a {
-            padding-top: 20px;
-         font-size: 1rem;
-        
-        }
-    }
-
-    .logo-footer {
+    footer {
 
         img {
-            width: 6%;
-            padding-bottom: 30px;
-
+            width: 20%;
         }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .contenu {
+            .logo-footer {
+                margin: auto;
+
+                width: 45%;
+            }
+        }
+
+        .news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                height: 40px;
+                width: 50%;
+                border-radius: 50px;
+            }
+
+            button {
+                width: 30%;
+            }
+        }
+
+        a {
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
     }
 
 }
+
+@media screen and (min-width:1024px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+        gap: 10px;
+        .contenu {
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 0 0 40%;
+          
+            .logo {
+                width: 50%;
+            }
+            // .texte{
+            //     // width: 50%;
+            // }
+            .logo-footer {
+                width: 40%;
+                margin-bottom: 15px;
+
+            }
+        }
+
+        .news {
+        
+          display: flex;
+            justify-content: end;
+            flex-direction: column;
+            flex: 0 0 40%;
+            gap: 5px;
+            .texte2{
+               color: black; 
+            }
+            .input {
+                width: 60%;
+            }
+
+            .button {
+                width: 30%;
+            }
+        }
+
+
+
+        .lien {
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: max-content;
+            flex: 0 0 20%;
+            gap: 15px;
+            a {
+                // padding-top: 20px;
+                font-size: 1rem;
+
+            }
+        }
+
+
+
+    }
 }
