@@ -123,18 +123,16 @@ footer {
         justify-content: space-around;
         margin: auto;
         gap: 10px;
-
         .contenu {
-
+           
             display: flex;
             flex-direction: column;
             align-items: center;
             flex: 0 0 40%;
-
+          
             .logo {
                 width: 50%;
             }
-
             // .texte{
             //     // width: 50%;
             // }
@@ -146,17 +144,15 @@ footer {
         }
 
         .news {
-
-            display: flex;
+        
+          display: flex;
             justify-content: end;
             flex-direction: column;
             flex: 0 0 40%;
             gap: 5px;
-
-            .texte2 {
-                color: black;
+            .texte2{
+               color: black; 
             }
-
             .input {
                 width: 60%;
             }
@@ -169,7 +165,7 @@ footer {
 
 
         .lien {
-
+          
             display: flex;
             justify-content: center;
             align-items: center;
@@ -177,7 +173,6 @@ footer {
             width: max-content;
             flex: 0 0 20%;
             gap: 15px;
-
             a {
                 // padding-top: 20px;
                 font-size: 1rem;
