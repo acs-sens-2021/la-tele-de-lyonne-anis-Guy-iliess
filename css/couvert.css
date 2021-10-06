@@ -112,6 +112,12 @@ header .don_asso {
   grid-column: 2;
 }
 
+header .don_asso:hover {
+  background-color: #00AF04;
+  -webkit-transition: .5 ease-in-out;
+  transition: .5 ease-in-out;
+}
+
 @media (min-width: 760px) {
   header .don_asso {
     font-size: 1.3rem;
@@ -162,6 +168,7 @@ header .don_asso {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 3rem;
   }
 }
 
@@ -187,7 +194,7 @@ header .txt_head .card_head .menus {
   right: 0;
   left: 0;
   background-color: #F5F5F5;
-  overflow-x: hidden;
+  display: none;
 }
 
 @media (min-width: 760px) {
@@ -232,7 +239,7 @@ header .txt_head .card_head .menus li a {
     margin-right: 3rem;
     color: black;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: normal;
     letter-spacing: normal;
   }
@@ -390,7 +397,7 @@ footer .logo-footer {
 }
 
 footer .logo-footer img {
-  width: 50%;
+  width: 10%;
   margin-top: 15px;
 }
 
@@ -511,6 +518,9 @@ footer .lien a {
     width: 100%;
   }
   footer .news {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
