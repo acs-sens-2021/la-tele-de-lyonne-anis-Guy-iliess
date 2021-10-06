@@ -1,3 +1,113 @@
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
+main .modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+main .modal .modal-content {
+  background-color: #242222;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #888;
+  width: 80%;
+}
+
+main .modal .modal-content .titre {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+main .modal .modal-content .text_areas {
+  margin: auto;
+  max-width: 90%;
+}
+
+main .modal .modal-content .text_areas textarea {
+  max-width: 100%;
+  padding: .5rem;
+  margin: .5rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 5px;
+  resize: none;
+}
+
+main .modal .modal-content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 90%;
+  margin-top: 1rem;
+}
+
+main .modal .modal-content .buttons p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .modal .modal-content .buttons button {
+  background-color: #242222;
+  color: #ff64d0;
+  padding: .5rem;
+  margin: .5rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 5px;
+}
+
+main .modal .modal-content .buttons .parcourir {
+  margin-left: .5rem;
+}
+
+main .modal .modal-content .send {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 1rem;
+}
+
+main .modal .modal-content .close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+main .modal .modal-content .close:hover, main .modal .modal-content .close:focus {
+  color: #ff64d0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main .modal .modal-content .tel {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
 header {
   background-color: #F5F5F5;
   display: -ms-grid;
@@ -81,6 +191,12 @@ header .don_asso {
   grid-column: 2;
 }
 
+header .don_asso:hover {
+  background-color: #00AF04;
+  -webkit-transition: .5 ease-in-out;
+  transition: .5 ease-in-out;
+}
+
 @media (min-width: 760px) {
   header .don_asso {
     font-size: 1.3rem;
@@ -131,6 +247,7 @@ header .don_asso {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 3rem;
   }
 }
 
@@ -156,7 +273,7 @@ header .txt_head .card_head .menus {
   right: 0;
   left: 0;
   background-color: #F5F5F5;
-  overflow-x: hidden;
+  display: none;
 }
 
 @media (min-width: 760px) {
@@ -201,7 +318,7 @@ header .txt_head .card_head .menus li a {
     margin-right: 3rem;
     color: black;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: normal;
     letter-spacing: normal;
   }
@@ -291,6 +408,12 @@ header .txt_head .card_head .menus li a {
           transform: rotate(-45deg);
 }
 
+body {
+  height: 100vh;
+  background-color: #100e0f;
+  overflow-x: hidden;
+}
+
 footer {
   background-color: #F5F5F5;
   display: -webkit-box;
@@ -328,7 +451,7 @@ footer .logo-footer {
 }
 
 footer .logo-footer img {
-  width: 50%;
+  width: 10%;
   margin-top: 15px;
 }
 
@@ -449,6 +572,9 @@ footer .lien a {
     width: 100%;
   }
   footer .news {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,11 +623,6 @@ footer .lien a {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  height: 100vh;
-  background-color: #100e0f;
 }
 
 h1 {
@@ -756,6 +877,10 @@ main .partenaires button {
 main .partenaires button a {
   color: #ff64d0;
   text-decoration: none;
+}
+
+footer .lien .myBtn:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 760px) {
