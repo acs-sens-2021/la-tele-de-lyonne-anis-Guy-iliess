@@ -379,9 +379,11 @@ footer .lien {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
@@ -442,6 +444,7 @@ footer .lien a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: auto;
+    gap: 10px;
   }
   footer .contenu {
     display: -webkit-box;
@@ -455,41 +458,51 @@ footer .lien a {
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
   }
   footer .contenu .logo {
-    width: 20%;
+    width: 50%;
   }
-  footer .contenu .logo .logo-f {
-    width: 100%;
+  footer .contenu .logo-footer {
+    width: 40%;
+    margin-bottom: 15px;
   }
   footer .news {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
-    gap: 20px;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    gap: 5px;
+  }
+  footer .news .texte2 {
+    color: black;
   }
   footer .news .input {
-    width: 70%;
+    width: 60%;
   }
   footer .news .button {
-    width: 40%;
+    width: 30%;
   }
   footer .lien {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -500,14 +513,10 @@ footer .lien a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%;
+    gap: 15px;
   }
   footer .lien a {
-    padding-top: 20px;
     font-size: 1rem;
-  }
-  footer .logo-footer img {
-    width: 6%;
-    padding-bottom: 30px;
   }
 }
 
@@ -625,8 +634,11 @@ main .modal .modal-content .tel {
 .titre {
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 30px;
+  font-size: 2.5rem;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #00AF04;
 }
 
 @media (min-width: 760px) {
@@ -641,13 +653,13 @@ main .modal .modal-content .tel {
             align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 50px;
+    font-size: 3rem;
   }
 }
 
 @media (min-width: 1300px) {
   .titre {
-    font-size: 76px;
+    font-size: 4rem;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
@@ -724,8 +736,28 @@ main .container article {
           box-shadow: 2px 2px 5px black, inset 5px 5px 10px black;
 }
 
+main .container article h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+main .container article .date {
+  font-size: .8rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: grey;
+}
+
+@media (min-width: 1300px) {
+  main .container article .date {
+    font-size: 1rem;
+  }
+}
+
 main .container article img {
-  max-width: 14rem;
+  width: 300px;
+  height: 225px;
 }
 
 main .container article .banner {
@@ -741,18 +773,6 @@ main .container article p {
 @media (min-width: 1300px) {
   main .container article p {
     font-size: 1rem;
-  }
-}
-
-main .container article .date {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-align: center;
-}
-
-@media (min-width: 1300px) {
-  main .container article .date {
-    font-size: 22px;
   }
 }
 
@@ -792,27 +812,32 @@ main .pagination {
 main .pagination :first-child,
 main .pagination :last-child {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 7px;
   background-color: #272626;
-  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
+  -webkit-box-shadow: 2px 2px 3px white, inset 5px 5px 10px black;
+          box-shadow: 2px 2px 3px white, inset 5px 5px 10px black;
   border: none;
+  margin: 15px;
 }
 
 main .pagination a {
-  color: #ff64d0;
+  color: #00AF04;
   text-decoration: none;
-  margin: .1rem;
 }
 
 @media (min-width: 1200px) {
   main .pagination a {
-    font-size: 24px;
+    font-size: 1rem;
   }
 }
 
 main .pagination .nb_page {
   color: #F5F5F5;
+}
+
+details summary {
+  color: #00AF04;
+  cursor: pointer;
 }
 /*# sourceMappingURL=voixdegarage.css.map */
