@@ -1,3 +1,15 @@
+main h1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #00AF04;
+}
+
 header {
   background-color: #F5F5F5;
   display: -ms-grid;
@@ -185,6 +197,7 @@ header .txt_head .card_head .menus {
 
 header .txt_head .card_head .menus li {
   list-style: none;
+  text-align: center;
 }
 
 header .txt_head .card_head .menus li a {
@@ -366,9 +379,11 @@ footer .lien {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
@@ -429,6 +444,7 @@ footer .lien a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: auto;
+    gap: 10px;
   }
   footer .contenu {
     display: -webkit-box;
@@ -442,41 +458,51 @@ footer .lien a {
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
   }
   footer .contenu .logo {
-    width: 20%;
+    width: 50%;
   }
-  footer .contenu .logo .logo-f {
-    width: 100%;
+  footer .contenu .logo-footer {
+    width: 40%;
+    margin-bottom: 15px;
   }
   footer .news {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
-    gap: 20px;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    gap: 5px;
+  }
+  footer .news .texte2 {
+    color: black;
   }
   footer .news .input {
-    width: 70%;
+    width: 60%;
   }
   footer .news .button {
-    width: 40%;
+    width: 30%;
   }
   footer .lien {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -487,126 +513,11 @@ footer .lien a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%;
+    gap: 15px;
   }
   footer .lien a {
-    padding-top: 20px;
     font-size: 1rem;
   }
-  footer .logo-footer img {
-    width: 6%;
-    padding-bottom: 30px;
-  }
-}
-
-main .modal {
-  display: none;
-  position: fixed;
-  z-index: 3;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-main .modal .modal-content {
-  background-color: #242222;
-  margin: auto;
-  padding: 20px;
-  border: 2px solid #888;
-  width: 80%;
-}
-
-main .modal .modal-content .titre {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-}
-
-main .modal .modal-content .text_areas {
-  margin: auto;
-  max-width: 90%;
-}
-
-@media (min-width: 1300px) {
-  main .modal .modal-content .text_areas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-main .modal .modal-content .text_areas textarea {
-  max-width: 100%;
-  padding: .5rem;
-  margin: .5rem;
-  margin-left: 0;
-  margin-right: 0;
-  border-radius: 5px;
-  resize: none;
-  font-size: 18px;
-}
-
-main .modal .modal-content .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  max-width: 90%;
-  margin-top: 1rem;
-}
-
-main .modal .modal-content .buttons p {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-main .modal .modal-content .buttons button {
-  background-color: #242222;
-  color: #00AF04;
-  padding: .5rem;
-  margin: .5rem;
-  margin-left: 0;
-  margin-right: 0;
-  border-radius: 5px;
-}
-
-main .modal .modal-content .buttons .parcourir {
-  margin-left: .5rem;
-}
-
-main .modal .modal-content .send {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin-top: 1rem;
-}
-
-main .modal .modal-content .close {
-  color: #fff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-main .modal .modal-content .close:hover, main .modal .modal-content .close:focus {
-  color: #ff64d0;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-main .modal .modal-content .tel {
-  margin-top: 1rem;
-  font-size: 12px;
 }
 
 * {
@@ -622,11 +533,6 @@ body {
 
 main {
   color: white;
-}
-
-main h1 {
-  text-align: center;
-  margin: 15px;
 }
 
 main h2 {
@@ -673,6 +579,7 @@ main ul {
     margin-left: 35px;
   }
   .formulaire {
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

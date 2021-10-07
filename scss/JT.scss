@@ -14,10 +14,7 @@ body {
 }
 
 .titre {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 30px;
-    text-align: center;
+    @extend %title;
 
     @media (min-width: 760px) {
         grid-row: 1;
@@ -188,6 +185,7 @@ main {
             border: none;
             margin-left: 50%;
             transform: translateX(-50%);
+            z-index:-1;
 
             a {
                 color: #ff64d0;

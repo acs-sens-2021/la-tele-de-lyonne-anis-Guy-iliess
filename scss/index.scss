@@ -16,9 +16,17 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto Slab', serif;
+    @extend %title;
 }
 
+h2 {
+    text-align: center;
+    margin: 5%;
+    margin-left: 12%;
+    text-decoration: underline white;
+}
+
+h2,
 span,
 p,
 figcaption,
@@ -68,19 +76,8 @@ main {
                 font-weight: 600;
             }
 
-            button {
-                padding: .8rem;
-                border-radius: 15px;
-                margin-top: 1rem;
-                background-color: #272626;
-                box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-                border: none;
 
-                a {
-                    color: #00AF04;
-                    text-decoration: none;
-                }
-            }
+
         }
     }
 
@@ -116,12 +113,26 @@ main {
 
                 img {
                     max-width: 90%;
-                    border-radius: 5px;
+                    border-radius: 15px;
                 }
 
                 figcaption {
                     color: #100e0f;
                     padding-top: .5rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #00AF04;
+                    background-color: #272626;
+                    box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
+                    border: none;
+                    border-radius: 15px;
+                    padding: 4px 15px;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -130,7 +141,8 @@ main {
             margin-top: 1rem;
             margin-left: 50%;
             transform: translateX(-50%);
-            padding: .5rem;
+            padding: 5px 15px;
+            max-width: max-content;
             border-radius: 20px;
             background-color: #272626;
             box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
@@ -195,7 +207,10 @@ main {
             margin-top: 2rem;
             margin-left: 50%;
             transform: translateX(-50%);
-            padding: .5rem;
+
+            padding: 5px 15px;
+            max-width: max-content;
+
             background-color: #272626;
             box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
             border: none;
@@ -313,7 +328,7 @@ footer {
 @media (min-width: 1600px) {
 
     main {
-        width: 75%;
+        width: 70%;
         margin: auto;
 
         article {
@@ -337,13 +352,7 @@ footer {
 
                 p {
                     font-size: 28px;
-
-                }
-
-                button {
-                    padding: 1%;
-                    align-self: center;
-                }
+                } 
             }
         }
 
@@ -352,11 +361,7 @@ footer {
             margin-top: 0;
             margin-bottom: 5%;
 
-            button {
-                padding: 1%;
-                max-width: max-content;
-            }
-        }
+           
 
         .map {
             margin: 15%;
@@ -364,11 +369,7 @@ footer {
             margin-bottom: 0;
         }
 
-        .partenaires {
-            button {
-                padding: 1%;
-                max-width: max-content;
-            }
-        }
+
     }
+}
 }

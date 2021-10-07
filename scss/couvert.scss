@@ -46,7 +46,7 @@ a {
     flex-direction: column;
 
     h1 {
-        @include h1(1.8rem);
+        @extend %title;
     }
 
     img {

@@ -2,8 +2,8 @@
 @import "extends";
 @import "mixins";
 @import "footer";
-
 @import "navbar";
+@import "modal";
 
 * {
     @extend %init;
@@ -14,9 +14,7 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    text-align: center;
+    @extend %title;
 }
 
 .card {

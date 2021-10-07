@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/modal.js" defer></script>
     <link rel="stylesheet" href="css/Adhérer.css">
+    <title>Document</title>
 </head>
+
 <body>
     <header>
         <a href="./index.html">
@@ -14,84 +18,113 @@
         </a>
         <div class="txt_head">
             <div class="card_head">
-                <p class="menus">
-                    <a href="./ccavant.html">A Découvert</a>
-                    <a href="./ccavant.html">C'était comment avant ?</a>
-                    <a href="./ccavant.html">Images de Pros</a>
-                    <a href="./ccavant.html">Le JT</a>
-                    <a href="./ccavant.html">Restons Couverts</a>
-                    <a href="./ccavant.html">Top Culture</a>
-                    <a href="./ccavant.html">Voix de Garage</a>
-                </p>
+                <ul class="menus">
+                    <li><a href="decouvert.html">A Découvert</a></li>
+                    <li><a href="./ccavant.html">C'était comment avant ?</a></li>
+                    <li><a href="./imagePro.html">Images de Pros</a></li>
+                    <li><a href="./JT.html">Le JT</a></li>
+                    <li><a href="./couvert.html">Restons Couverts</a></li>
+                    <li><a href="./topCulture.html">Top Culture</a></li>
+                    <li><a href="./VoixDeGarage.html">Voix de Garage</a></li>
+                </ul>
             </div>
         </div>
-        <button class="don_asso">Adhèrez à l'association !</button>
-        <img src="./img/burger_open.svg" alt="burger" class="burger mobil" width="100%">
+        <a href="Adhérer.html" class="don_asso"> Adhèrez à l'association !</a>
+        <button class="burger"> <span></span></button>
     </header>
-<main>
-    <h1>Soutenez la télé de <br> l'yonne</h1>
-
-<h2>Vous souhaitez nous accorder votre soutien financier ?</h2>
-   <h2>Vous partagez des valeurs proches des notres ?</h2>
-
-     <p>Nous sommes principalement à la recherche de financements, pour continuer de donner “jeunes de 14 à 77 ans” de toutes les communes, la possibilité de s’épanouir au sein d’un atelier vidéo, clé de voûte du projet.</p>
-
-     <p>Tous ont ainsi accès à un véritable espace de découverte, de créativité mais aussi d’apprentissage des métiers de la réalisation et de la production (techniques de tournage, prise de parole, montage, prise de vue etc.).</p>
-<p>
-    Supervisés par le responsable éditorial, les apprentis reporters de LA TÉLÉ DE L’YONNE vont sur le terrain pour filmer, poser des questions sur des sujets précis, pour permettre à notre présentateur JT de réaliser son journal d’information chaque vendredi à 12h10.</p>
-    <p>Plusieurs stages sont organisés pendant les vacances scolaires :</p>
-<ul>
-    <li>un atelier axé sur l’écriture</li>
-    <li>un atelier d’entrainement à l’oral</li>
-    <li>un atelier dédié à la réalisation de courtes séances vidéo.</li>
-</ul>
-<p>En contrepartie, nous pourrions vous assurer une bonne visibilité auprès du public, car nous sommes très présents sur les réseaux sociaux, mais aussi dans le tissu économique local.</p>
-<p>En faisant un don à notre association vous avez</p>
-
+    <main>
+        <h1>Soutenez la télé de <br> l'yonne</h1>
+        <h2>Vous souhaitez nous accorder votre soutien financier ?</h2>
+        <h2>Vous partagez des valeurs proches des notres ?</h2>
+        <p>Nous sommes principalement à la recherche de financements, pour continuer de donner “jeunes de 14 à 77 ans”
+            de toutes les communes, la possibilité de s’épanouir au sein d’un atelier vidéo, clé de voûte du projet.</p>
+        <p>Tous ont ainsi accès à un véritable espace de découverte, de créativité mais aussi d’apprentissage des
+            métiers de la réalisation et de la production (techniques de tournage, prise de parole, montage, prise de
+            vue etc.).</p>
+        <p></p>
+        Supervisés par le responsable éditorial, les apprentis reporters de LA TÉLÉ DE L’YONNE vont sur le terrain
+        pour filmer, poser des questions sur des sujets précis, pour permettre à notre présentateur JT de réaliser
+        son journal d’information chaque vendredi à 12h10.</p>
+        <p>Plusieurs stages sont organisés pendant les vacances scolaires :</p>
+        <ul>
+            <li>un atelier axé sur l’écriture</li>
+            <li>un atelier d’entrainement à l’oral</li>
+            <li>un atelier dédié à la réalisation de courtes séances vidéo.</li>
+        </ul>
+        <p>En contrepartie, nous pourrions vous assurer une bonne visibilité auprès du public, car nous sommes très
+            présents sur les réseaux sociaux, mais aussi dans le tissu économique local.</p>
+        <p>En faisant un don à notre association vous avez</p>
         <h2>une réduction d’impôts de 66% sur le montant total du don</h2>
-
         <p>Alors qu’attendez-vous pour faire partie de l’aventure ?</p>
-
-   </main>
-
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="titre">Mon Message :</h1>
+                <div class="text_areas">
+                    <textarea name="nom" id="nom" cols="50" rows="1" placeholder="Mon nom ..."></textarea>
+                    <textarea name="mail" id="mail" cols="50" rows="1" placeholder="Mon mail ..."></textarea>
+                    <textarea name="sujet" id="sujet" cols="50" rows="1" placeholder="Mon sujet ..."></textarea>
+                    <textarea name="texte" id="text" cols="50" rows="10"
+                        placeholder="Une question, une remarque, une idée de reportage ou une suggestion pour le site ? Vous avez un projet et vous souhaitez nous en parler ?"></textarea>
+                </div>
+                <div class="buttons">
+                    <p>Mon fichier</p>
+                    <button class="parcourir">Parcourir</button>
+                </div>
+                <div class="buttons send">
+                    <button>Envoyer</button>
+                </div>
+                <p class="tel">**Vous pouvez également nous contacter par téléphone au : 06 07 13 07 29</p>
+            </div>
+        </div>
+    </main>
 
     <div class="formulaire">
-        <div>  <h2>Faire un don à notre association</h2><iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/la-tele-de-l-yonne/formulaires/1/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>	</div>
-      
-        <div> <h2>Faire un don à notre association</h2><iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/la-tele-de-l-yonne/adhesions/bulletin-d-adhesion-a-la-tele-de-l-yonne/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>		</div>
-    </div>
-
-
-<footer>
-    <div class="contenu">
-        <div class="logo">
-            <img class="logo-f" src="img/logo-tv-de-lyonnne.png" alt="">
+        <div>
+            <h2>Faire un don à notre association</h2><iframe id="haWidget" allowtransparency="true" scrolling="auto"
+                src="https://www.helloasso.com/associations/la-tele-de-l-yonne/formulaires/1/widget"
+                style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
         </div>
-        <p class="texte">La Télé de l’Yonne a pour vocation de rapporter une information culturelle de qualité
-            relative aux manifestations de l’Yonne à travers un journal télévisuel, des chroniques et des
-            reportages.</p>
 
-        <div class="logo-footer">
-            <img class="icon" src="img/icon-facebook.png" alt="">
-            <img class="icon" src="img/icon-inkedin.png" alt="">
-            <img class="icon" src="img/icon-instagram.png" alt="">
-            <img class="icon" src="img/icon-twitter.png" alt="">
-
+        <div>
+            <h2>Faire un don à notre association</h2><iframe id="haWidget" allowtransparency="true" scrolling="auto"
+                src="https://www.helloasso.com/associations/la-tele-de-l-yonne/adhesions/bulletin-d-adhesion-a-la-tele-de-l-yonne/widget"
+                style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
         </div>
     </div>
 
-    <div class="news">
-        <p class="texte2">Je m’abonne pour recevoir les meilleurs articles</p>
-        <input class="input" type="email" placeholder="mon email*">
-        <button class="button">je reçois les newsletters</button>
-    </div>
 
-    <div class="lien">
-        <a href="">Nous contacter</a>
-        <a href="">Cookies</a>
-        <a href="">Mentions légales</a>
-    </div>
-</footer>
+    <footer>
+        <div class="contenu">
+            <div class="logo">
+                <img class="logo-f" src="img/logo-tv-de-lyonnne.png" alt="">
+            </div>
+            <p class="texte">La Télé de l’Yonne a pour vocation de rapporter une information culturelle de qualité
+                relative aux manifestations de l’Yonne à travers un journal télévisuel, des chroniques et des
+                reportages.</p>
+
+            <div class="logo-footer">
+                <img class="icon" src="img/icon-facebook.png" alt="">
+                <img class="icon" src="img/icon-inkedin.png" alt="">
+                <img class="icon" src="img/icon-instagram.png" alt="">
+                <img class="icon" src="img/icon-twitter.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="news">
+            <p class="texte2">Je m’abonne pour recevoir les meilleurs articles</p>
+            <input class="input" type="email" placeholder="mon email*">
+            <button class="button">je reçois les newsletters</button>
+        </div>
+
+        <div class="lien">
+            <a class="myBtn">Nous contacter</a>
+            <a href="">Cookies</a>
+            <a href="">Mentions légales</a>
+        </div>
+    </footer>
 
 </body>
+
 </html>

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/culture.css">
     <script src="./js/nav.js" defer></script>
+    <script src="./js/modal.js" defer></script>
     <title>Top Culture</title>
 </head>
 
@@ -83,7 +84,30 @@
             <a href="" class="nb_page">6</a>
             <a href="">Suivant &#10095;&#10095;</a>
         </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="titre">Mon Message :</h1>
+                <div class="text_areas">
+                    <textarea name="nom" id="nom" cols="50" rows="1" placeholder="Mon nom ..."></textarea>
+                    <textarea name="mail" id="mail" cols="50" rows="1" placeholder="Mon mail ..."></textarea>
+                    <textarea name="sujet" id="sujet" cols="50" rows="1" placeholder="Mon sujet ..."></textarea>
+                    <textarea name="texte" id="text" cols="50" rows="10"
+                        placeholder="Une question, une remarque, une idée de reportage ou une suggestion pour le site ? Vous avez un projet et vous souhaitez nous en parler ?"></textarea>
+                </div>
+                <div class="buttons">
+                    <p>Mon fichier</p>
+                    <button class="parcourir">Parcourir</button>
+                </div>
+                <div class="buttons send">
+                    <button>Envoyer</button>
+                </div>
+                <p class="tel">**Vous pouvez également nous contacter par téléphone au : 06 07 13 07 29</p>
+            </div>
+        </div>
     </main>
+
     <footer>
         <div class="contenu">
             <div class="logo">
@@ -108,7 +132,7 @@
         </div>
 
         <div class="lien">
-            <a href="">Nous contacter</a>
+            <a class="myBtn">Nous contacter</a>
             <a href="">Cookies</a>
             <a href="Mentions légales.html">Mentions légales</a>
         </div>

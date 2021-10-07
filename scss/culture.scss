@@ -3,6 +3,7 @@
 @import "mixins";
 @import "navbar";
 @import "footer";
+@import "modal";
 
 * {
     box-sizing: border-box;
@@ -15,10 +16,7 @@ body {
 }
 
 .titre {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 30px;
-    text-align: center;
+    @extend %title;
 
     @media (min-width: 760px) {
         grid-row: 1;
