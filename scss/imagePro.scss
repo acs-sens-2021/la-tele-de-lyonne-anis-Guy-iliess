@@ -2,8 +2,8 @@
 @import "extends";
 @import "mixins";
 @import "footer";
-
 @import "navbar";
+@import "modal";
 
 * {
     @extend %init;

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/mention legal.css">
     <script src="./js/nav.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <title>Document</title>
 </head>
+
 <body>
     <header>
         <a href="./index.html">
@@ -27,32 +31,66 @@
             </div>
         </div>
         <a href="Adhérer.html" class="don_asso"> Adhèrez à l'association !</a>
-     <button class="burger"> <span></span></button>
+        <button class="burger"> <span></span></button>
     </header>
 
-    <div class="conteneur">
-
-        <h1>Mentions légales</h1>
-        <p>Le site de LA TÉLÉ DE L’YONNE est conçu pour LA TÉLÉ DE L’YONNE.
-            Merci de lire attentivement cette notice légale avant de consulter notre site.
+    <main>
+        <div class="conteneur">
+            <h1>Mentions légales</h1>
+            <p>Le site de LA TÉLÉ DE L’YONNE est conçu pour LA TÉLÉ DE L’YONNE.
+                Merci de lire attentivement cette notice légale avant de consulter notre site.
             </p>
-        <h2>Création</h2>
-        <div class="texte">
-            <p>Anis</p>
-            <p>Guy</p>
-            <p>Iliess</p>
-        </div>
-        <h2>Droits d'auteur</h2>
-        <p>L’ensemble de ce site relève de la législation française et internationale sur le droit d’auteur et la propriété intellectuelle. Toute copie, reproduction, représentation, adaptation, diffusion, intégrale ou partielle, du contenu du site de La Télé de l’Yonne, par quelque procédé que ce soit, est illicite à l’exception d’une unique copie réservée à l’usage exclusivement privé du copiste.
-            Les informations contenues dans ce site sont présentes à titre purement informatif et sont non contractuelles. La Télé de l’Yonne  ne saurait être tenue responsable pour toute erreur ou omission dans les textes et illustrations du site. Les informations peuvent faire l’objet de modifications sans préavis.</p>
+            <h2>Création</h2>
+            <div class="texte">
+                <p>Anis</p>
+                <p>Guy</p>
+                <p>Iliess</p>
+            </div>
+            <h2>Droits d'auteur</h2>
+            <p>L’ensemble de ce site relève de la législation française et internationale sur le droit d’auteur et la
+                propriété intellectuelle. Toute copie, reproduction, représentation, adaptation, diffusion, intégrale ou
+                partielle, du contenu du site de La Télé de l’Yonne, par quelque procédé que ce soit, est illicite à
+                l’exception d’une unique copie réservée à l’usage exclusivement privé du copiste.
+                Les informations contenues dans ce site sont présentes à titre purement informatif et sont non
+                contractuelles. La Télé de l’Yonne ne saurait être tenue responsable pour toute erreur ou omission dans
+                les
+                textes et illustrations du site. Les informations peuvent faire l’objet de modifications sans préavis.
+            </p>
             <h2>Protection des données personnelles</h2>
-            <p>Conformément à la Loi Informatique et Libertés (Loi n° 78-17 du 6 janvier 1978), nous vous informons que vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données nécessaires au traitement de vos demandes de renseignement ou de documentation.</p>
+            <p>Conformément à la Loi Informatique et Libertés (Loi n° 78-17 du 6 janvier 1978), nous vous informons que
+                vous
+                disposez d’un droit d’accès, de modification, de rectification et de suppression des données nécessaires
+                au
+                traitement de vos demandes de renseignement ou de documentation.</p>
             <p>Vous pouvez l’exercer en écrivant à :</p>
             <p>La Télé de l’Yonne</p>
-               <p>Bâtiment Adrien Durand – Rue De La Pérouse – 89300 Joigny</p>
-                <p>Tél. 06 07 13 07 29</p>
-    </div>
-  <footer>
+            <p>Bâtiment Adrien Durand – Rue De La Pérouse – 89300 Joigny</p>
+            <p>Tél. 06 07 13 07 29</p>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="titre">Mon Message :</h1>
+                <div class="text_areas">
+                    <textarea name="nom" id="nom" cols="50" rows="1" placeholder="Mon nom ..."></textarea>
+                    <textarea name="mail" id="mail" cols="50" rows="1" placeholder="Mon mail ..."></textarea>
+                    <textarea name="sujet" id="sujet" cols="50" rows="1" placeholder="Mon sujet ..."></textarea>
+                    <textarea name="texte" id="text" cols="50" rows="10"
+                        placeholder="Une question, une remarque, une idée de reportage ou une suggestion pour le site ? Vous avez un projet et vous souhaitez nous en parler ?"></textarea>
+                </div>
+                <div class="buttons">
+                    <p>Mon fichier</p>
+                    <button class="parcourir">Parcourir</button>
+                </div>
+                <div class="buttons send">
+                    <button>Envoyer</button>
+                </div>
+                <p class="tel">**Vous pouvez également nous contacter par téléphone au : 06 07 13 07 29</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
 
         <div class="contenu">
             <div class="logo">
@@ -80,10 +118,11 @@
         </div>
 
         <div class="lien">
-            <a href="">Nous contacter</a>
+            <a class="myBtn">Nous contacter</a>
             <a href="">Cookies</a>
             <a href="Mentions légales.html">Mentions légales</a>
         </div>
     </footer>
 </body>
+
 </html>
