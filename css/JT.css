@@ -210,6 +210,7 @@ header .txt_head .card_head .menus {
 
 header .txt_head .card_head .menus li {
   list-style: none;
+  text-align: center;
 }
 
 header .txt_head .card_head .menus li a {
@@ -874,6 +875,7 @@ main article button {
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: -1;
 }
 
 main article button a {
