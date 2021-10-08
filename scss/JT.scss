@@ -92,12 +92,17 @@ main {
     @media (min-width: 1300px) {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 5%;
-        max-width: 85%;
+        width: 70%;
         margin: auto;
 
         .case1 {
             grid-column: 1;
             grid-row: 2;
+
+            // background-color: #100E0F;
+            // box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px white;
+            // border-radius: 15px;
+            // padding: 20px;
         }
 
         .case2 {
