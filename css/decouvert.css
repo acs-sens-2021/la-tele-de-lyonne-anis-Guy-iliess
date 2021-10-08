@@ -196,6 +196,7 @@ header .txt_head .card_head .menus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 3rem;
   }
 }
 
@@ -635,6 +636,55 @@ footer .lien a {
   }
 }
 
+.pagination {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 10% 35px 10%;
+}
+
+.pagination :first-child,
+.pagination :last-child {
+  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+  color: #02ce05;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #242222;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination {
+    font-size: 1.3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pagination {
+    font-size: 1.3rem;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -649,7 +699,7 @@ main .card1 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 main .card1 h2 {
@@ -686,7 +736,6 @@ main .card1 button {
   border: none;
   width: 44%;
   padding: 10px;
-  margin-bottom: 20px;
 }
 
 main .card1 button img {
@@ -699,6 +748,12 @@ main button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -712,17 +767,21 @@ main button {
   }
   .cards .card1 {
     height: 80%;
+    padding-bottom: 30px;
   }
   .cards .card1 p {
     font-size: 0.9rem;
   }
   .cards .card1 img {
-    height: 20%;
+    height: 30%;
   }
   .cards .card1 button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .cards .card1 button p {
+    text-align: center;
   }
   .cards .card1 button img {
     width: 15%;
@@ -739,14 +798,15 @@ main button {
     width: 75%;
     margin: auto;
   }
-  .card1 {
-    height: 85%;
-  }
-  .card1 > p {
+  .card1 p {
     margin-top: 30px;
   }
-  .card1 > img {
+  .card1 img {
     height: 30%;
+    margin-top: 5%;
+  }
+  .card1 button img {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=decouvert.css.map */

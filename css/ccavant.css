@@ -203,6 +203,7 @@ header .txt_head .card_head .menus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 3rem;
   }
 }
 
@@ -640,6 +641,55 @@ main .modal .modal-content .close:hover, main .modal .modal-content .close:focus
 main .modal .modal-content .tel {
   margin-top: 1rem;
   font-size: 12px;
+}
+
+.pagination {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 10% 35px 10%;
+}
+
+.pagination :first-child,
+.pagination :last-child {
+  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+  color: #02ce05;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #242222;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination {
+    font-size: 1.3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pagination {
+    font-size: 1.3rem;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
 }
 
 @media (min-width: 760px) {
