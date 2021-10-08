@@ -7,12 +7,12 @@ header {
 
     @media (min-width: 1300px) {
         justify-content: start;
-        column-gap: 5%;
+        // column-gap: 5%;
     }
 
     @media(min-width:1600px) {
         justify-content: space-between;
-        column-gap: 10%;
+        // column-gap: 10%;
     }
 
     a {
@@ -28,15 +28,14 @@ header {
 
             @media (min-width: 760px) {
                 max-width: 7rem;
+                margin-left: 1.7rem;
             }
 
             @media (min-width: 1300px) {
-                max-width: 8rem;
+               margin-top: 1.5rem;
             }
 
-            @media (min-width: 1600px) {
-                max-width: 9rem;
-            }
+           
 
         }
     }
@@ -49,7 +48,7 @@ header {
         box-shadow: inset 10px 10px 15px black, inset -10px -10px 15px black;
         border-radius: 25px;
         font-size: 1rem;
-        max-width: none;
+        // max-width: none;
         align-self: center;
         padding: 9px;
         grid-row: 1;
@@ -60,12 +59,19 @@ header {
         }
 
         @media(min-width:1300px) {
-            max-width: max-content;
-            margin-left: 50%;
-            transform: translateX(-50%);
+            // max-width: max-content;
+            // margin-left: 50%;
+            // transform: translateY(-50%);
             margin-right: 0;
-            grid-row: 2;
-            grid-column: 1 / 5;
+            font-size:.7rem;
+            // grid-row: 2;
+            // grid-column: 1 / 5;
+            grid-row: 1;
+            grid-column: 3;
+        }
+        @media(min-width:1600px) {
+            grid-row: 1;
+            grid-column: 3;
         }
     }
 
@@ -100,6 +106,7 @@ header {
                 background-color: #F5F5F5;
                display: none;
 
+
                 @media(min-width:760px) {
                     top: 11vh;
                 }
@@ -111,7 +118,8 @@ header {
                     transform: translateX(0);
                     transition: initial;
                     flex-direction: row;
-                    margin-top: 3rem;
+                    margin-top: 4rem;
+                    margin-left: 14px;
                 }
 
                 li {
@@ -129,21 +137,21 @@ header {
                             margin-right: 3rem;
                             color: black;
                             text-decoration: none;
-                            font-size: 1rem;
+                            font-size: .9rem;
                             line-height: normal;
                             letter-spacing: normal;
                         }
 
                         &:hover {
                             @media(min-width:1300px) {
-                                background-color: #00AF04;
+                                text-decoration: underline 3px solid green;
                             }
                         }
 
 
                         @media(min-width:1600px) {
 
-                            font-size: 1rem;
+                         
                             padding-left: 12px;
                         }
                     }
