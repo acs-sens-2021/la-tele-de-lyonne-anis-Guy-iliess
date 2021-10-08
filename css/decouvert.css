@@ -162,8 +162,6 @@ header .txt_head .card_head .menus {
   top: 8vh;
   -webkit-transform: translateX(110%);
           transform: translateX(110%);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
   right: 0;
   left: 0;
   background-color: #F5F5F5;
