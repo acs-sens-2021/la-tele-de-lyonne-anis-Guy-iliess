@@ -179,7 +179,7 @@ header .txt_head .card_head .menus {
 
 @media (min-width: 760px) {
   header .txt_head .card_head .menus {
-    top: 11vh;
+    top: 16vh;
   }
 }
 
@@ -211,7 +211,7 @@ header .txt_head .card_head .menus li {
 header .txt_head .card_head .menus li a {
   text-decoration: none;
   color: black;
-  line-height: 8rem;
+  line-height: 6.5rem;
   letter-spacing: 4px;
   font-weight: bold;
   text-transform: uppercase;
@@ -639,6 +639,55 @@ main .modal .modal-content .tel {
   font-size: 12px;
 }
 
+.pagination {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 10% 35px 10%;
+}
+
+.pagination :first-child,
+.pagination :last-child {
+  -webkit-box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+          box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+  color: #02ce05;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #242222;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination {
+    font-size: 1.3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pagination {
+    font-size: 1.3rem;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
 @media (min-width: 760px) {
   .titre {
     -ms-grid-row: 1;
@@ -689,6 +738,30 @@ main {
   max-width: 80%;
   margin: auto;
   color: #F5F5F5;
+}
+
+main .case1 button > a {
+  color: green;
+}
+
+main .case2 button > a {
+  color: green;
+}
+
+main .case3 button > a {
+  color: green;
+}
+
+main .case4 button > a {
+  color: green;
+}
+
+main .case5 button > a {
+  color: green;
+}
+
+main .case6 button > a {
+  color: green;
 }
 
 @media (min-width: 760px) {

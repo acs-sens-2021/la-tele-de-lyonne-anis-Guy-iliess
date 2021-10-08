@@ -167,7 +167,7 @@ header .txt_head .card_head .menus {
 
 @media (min-width: 760px) {
   header .txt_head .card_head .menus {
-    top: 11vh;
+    top: 16vh;
   }
 }
 
@@ -199,7 +199,7 @@ header .txt_head .card_head .menus li {
 header .txt_head .card_head .menus li a {
   text-decoration: none;
   color: black;
-  line-height: 8rem;
+  line-height: 6.5rem;
   letter-spacing: 4px;
   font-weight: bold;
   text-transform: uppercase;
@@ -671,8 +671,8 @@ main .modal .modal-content .tel {
 @media screen and (min-width: 1024px) {
   .pagination {
     font-size: 1.3rem;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
 
