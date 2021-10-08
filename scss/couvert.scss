@@ -24,6 +24,9 @@ main {
         width: 80%;
         margin: auto;
     }
+    @media screen and (min-width:1080px) {
+        width: 70%;
+    }
 
 }
 
@@ -93,7 +96,7 @@ h2 {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding: 35px;
 
 
@@ -135,24 +138,7 @@ h2 {
         @media (min-width:1024px) {
          flex-direction: column;
         }
-
-
-
-
-        .video {
-
-            // margin: 2rem;
-            @media screen and (min-width:768px) {}
-
-            margin-left: 40px;
-
-            @media (min-width:1024px) {
-              
-                margin-left: 20px;
-            }
-
-        }
-
+      
         .info {
             
             text-align: start;

@@ -4,6 +4,7 @@
 @import "navbar";
 @import "footer";
 @import "modal";
+@import "pagination";
 
 * {
     @extend %init;
@@ -49,6 +50,36 @@ main {
     max-width: 80%;
     margin: auto;
     color: #F5F5F5;
+    .case1{
+        button>a{
+            color: green;
+        }
+    }
+    .case2{
+        button>a{
+            color: green;
+        }
+    }
+    .case3{
+        button>a{
+            color: green;
+        }
+    }
+    .case4{
+        button>a{
+            color: green;
+        }
+    }
+    .case5{
+        button>a{
+            color: green;
+        }
+    }
+    .case6{
+        button>a{
+            color: green;
+        }
+    }
 
     @media (min-width: 760px) {
         display: grid;
@@ -95,7 +126,7 @@ main {
         width: 70%;
         margin: auto;
 
-        .case1 {
+        .case1{
             grid-column: 1;
             grid-row: 2;
 
@@ -103,6 +134,8 @@ main {
             // box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px white;
             // border-radius: 15px;
             // padding: 20px;
+
+          
         }
 
         .case2 {
