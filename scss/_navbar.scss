@@ -43,10 +43,11 @@ header {
 
     .don_asso {
         text-decoration: none;
-        color: black;
-        background: linear-gradient(90deg, rgba(106, 102, 101, .7) 26%, rgba(0, 0, 0, .1) 100%);
-        border: solid 1px black;
-        border-radius: 15px;
+        color: white;
+        font-weight: bold;
+        background-color: green;
+        box-shadow: inset 10px 10px 15px black, inset -10px -10px 15px black;
+        border-radius: 25px;
         font-size: 1rem;
         max-width: none;
         align-self: center;
