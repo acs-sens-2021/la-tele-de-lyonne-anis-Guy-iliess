@@ -4,6 +4,7 @@
 @import "navbar";
 @import "modal";
 @import "footer";
+@import "pagination";
 
 * {
     margin: 0;
@@ -27,7 +28,7 @@ main {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 20px;
 
         h2 {
             color: black;
@@ -62,7 +63,7 @@ main {
             border: none;
             width: 44%;
             padding: 10px;
-            margin-bottom: 20px;
+           
 
             img {
                 width: 20px;
@@ -74,13 +75,15 @@ main {
     button {
         margin: auto;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 // fin de la card1
 @media screen and (min-width:768px) {
 
-    .cards {
+    .cards{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         width: 90%;
@@ -88,18 +91,22 @@ main {
 
         .card1 {
             height: 80%;
+            padding-bottom: 30px;
 
             p {
                 font-size: 0.9rem;
             }
 
             img {
-                height: 20%;
+                height: 30%;
             }
 
             button {
                 align-items: center;
+                p{
+                    text-align: center;
 
+                }
                 img {
 
                     width: 15%;
@@ -119,20 +126,25 @@ main {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         width: 75%;
-
         margin: auto;
     }
 
     .card1 {
-        height: 85%;
 
+            p {
+                margin-top: 30px;
+            }
+            img {
+                height: 30%;
+                margin-top: 5%;
+            
+            }
+            button{
+               
+                img{
+                    margin: 0;
+                }
+            }
     }
 
-    .card1>p {
-        margin-top: 30px;
-    }
-
-    .card1>img {
-        height: 30%;
-    }
 }

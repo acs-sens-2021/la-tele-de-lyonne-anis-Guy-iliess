@@ -1,0 +1,41 @@
+.pagination {
+    margin-top: 35px;
+    margin-bottom: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+  margin: 30px 10% 35px 10%;
+    
+   
+   :first-child,
+    :last-child {
+        box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px black;
+        color: #02ce05;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #242222;
+       
+    }
+
+    a {
+        text-decoration: none;
+        color:white;
+        padding: 2px;
+      
+    }
+}
+@media screen and (min-width:768px){
+    .pagination{
+        font-size: 1.3rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+} 
+@media screen and (min-width:1024px){
+    .pagination{
+        font-size: 1.3rem;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
