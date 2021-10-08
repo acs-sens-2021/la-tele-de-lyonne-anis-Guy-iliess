@@ -53,26 +53,29 @@ main {
     
     color: #F5F5F5;
 
-    margin: auto;
-    @media (min-width: 760px) {
-       width: 65%;
+    // margin: auto;
+    // @media (min-width: 760px) {
+    //    width: 65%;
       
-    }
-    @media (min-width: 760px) {
-        width: 75%;
+    // }
+    // @media (min-width: 760px) {
+    //     width: 75%;
        
-     }
+    //  }
 
         .articles {
             display: grid;
             gap: 30px;
-
+            margin: auto;
+            width: 65%;
             @media (min-width:756px) {
                 grid-template-columns: repeat(2, 1fr);
+                width: 95%;
             }
 
-            @media (min-width:992px) {
+            @media (min-width:1124px) {
                 grid-template-columns: repeat(3, 1fr);
+                width: 90%;
             }
 
             //     .case1 {
@@ -159,6 +162,9 @@ main {
                 h2 {
                     text-align: center;
                     margin-bottom:1.5rem;
+                }
+                iframe{
+                    margin-bottom: 1.9rem;
                 }
 
                 

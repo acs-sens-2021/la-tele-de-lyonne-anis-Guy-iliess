@@ -730,38 +730,29 @@ button {
 
 main {
   color: #F5F5F5;
-  margin: auto;
-}
-
-@media (min-width: 760px) {
-  main {
-    width: 65%;
-  }
-}
-
-@media (min-width: 760px) {
-  main {
-    width: 75%;
-  }
 }
 
 main .articles {
   display: -ms-grid;
   display: grid;
   gap: 30px;
+  margin: auto;
+  width: 65%;
 }
 
 @media (min-width: 756px) {
   main .articles {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    width: 95%;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1124px) {
   main .articles {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    width: 90%;
   }
 }
 
@@ -789,5 +780,9 @@ main .articles article {
 main .articles article h2 {
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+main .articles article iframe {
+  margin-bottom: 1.9rem;
 }
 /*# sourceMappingURL=culture.css.map */
