@@ -12,7 +12,7 @@
 
 body {
     @extend %body;
-    width: 100vw;
+
 
 }
 
@@ -20,19 +20,13 @@ main {
     color: #F5F5F5;
 
     @media (min-width: 992px) {
-        width: 50%;
+        width: 80%;
         margin: auto;
     }
 
 }
-//   @media screen and (min-width:992px){
-     
-//     .couverts{
-//         width: 75%;
-//         margin: auto;
-//     }
-      
-//   }
+
+
 
 h2,
 h3,
@@ -80,21 +74,17 @@ h2 {
 
 }
 
-// @media screen and (min-width:1090px) {
-//     .article-content{
-//     display: grid;
-//     grid-template-columns:  2fr 2fr;
-//     }
+.article-content {
 
-// }
-.article-content{
-    @media screen and (min-width:996px){
+    display: grid;
+
+    @media screen and (min-width:996px) {
         justify-content: center;
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-      
+        grid-template-columns: repeat(2, 1fr);
+
     }
 }
+
 .diffusion {
     background-color: #242222;
     box-shadow: 2px 2px 5px black, inset 5px 5px 10px black;
@@ -104,12 +94,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     padding: 35px;
-    // @media screen and (min-width: 1080px) {
 
-    //         margin-right: 150px;
-    //         margin-left: 150px;
-
-    //     }
 
 
 
@@ -122,19 +107,20 @@ h2 {
         font-size: .8rem;
         text-align: center;
         font-weight: bold;
-    }
 
-    @media screen and (min-width: 810px) {
-        .date {
+        @media screen and (min-width: 810px) {
+
             text-align: start;
-        }
-    }
 
-    @media (min-width:1024px) {
-        .date {
+        }
+
+        @media (min-width:1024px) {
+
             margin-left: 40px
         }
     }
+
+
 
     .emission {
 
@@ -146,69 +132,48 @@ h2 {
             flex-direction: row;
         }
 
-        @media (min-width:1024px) {}
+
 
 
         .video {
+
             // margin: 2rem;
-            @media screen and (min-width:768px){
-                
-            }margin-left: 40px;
+            @media screen and (min-width:768px) {}
+
+            margin-left: 40px;
 
             @media (min-width:1024px) {
-                width: 560px;
+              
                 margin-left: 20px;
             }
 
         }
 
         .info {
-            flex: 0 0 40%;
+            
             text-align: start;
             width: 87%;
 
-        }
+            @media screen and (min-width:810px) {
 
-        @media screen and (min-width:810px) {
-            .info {
                 margin-left: 15%;
-
+                // flex: 0 0 40%;
             }
-
-            .info>h3 {
-                font-size: 1rem;
-                text-decoration: underline;
-            }
-
-            .info>p {
-                font-size: 0.9rem;
-            }
-
         }
 
-        @media screen and (min-width:720px) {
-            .info {
-                margin-right: 60px;
-
-                h3 {
-                    margin-bottom: 5px;
-                }
-            }
-
-        }
-
-        @media (min-width:1024px) {
-            flex: 0 0 40%;
-
-        }
 
         h3 {
             font-size: 1rem;
-            margin-left: 20px;
-            font-weight: 700;
+            text-decoration: underline;
+
+            @media (min-width:768px) {
+                margin-bottom: 5px;
+            }
 
             @media (min-width:1024px) {
-                font-size: 1.5rem;
+                margin-left: 20px;
+                font-size: 1.3rem;
+                font-weight: 700;
             }
         }
 
@@ -226,59 +191,10 @@ h2 {
             }
 
         }
+
+
     }
 
-}
 
 
-.pagination {
-    display: flex;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-
-    @media (min-width: 760px) {
-        // justify-content: center;
-        // justify-content: space-evenly;
-        // grid-column: 1 / 3;
-        // grid-row: 5;
-    }
-
-    @media (min-width: 1300px) {
-        grid-column: 1 / 4;
-    }
-
-    :first-child,
-    :last-child {
-        background-color: #272626;
-        box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #000;
-        border: 1px solid black;
-        border-radius: 15px;
-        border: none;
-        padding: 9px;
-        width: 30%;
-        text-align: center;
-    }
-
-    a {
-        color: #00AF04;
-        text-decoration: none;
-        margin: .1rem;
-
-        @media (min-width: 1200px) {
-            font-size: 24px;
-        }
-    }
-
-    .nb_page {
-        color: #F5F5F5;
-        text-decoration: none;
-        margin: .1rem;
-
-        @media (min-width: 1200px) {
-            font-size: 24px;
-        }
-    }
 }
