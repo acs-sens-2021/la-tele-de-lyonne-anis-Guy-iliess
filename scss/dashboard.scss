@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+header{
+    border-bottom: 2px solid black;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    height: 6vh;
+    
+
+    #recherche{
+        width: 100%;
+        max-width:  1.5rem;
+        height: 25px;
+        cursor: pointer;
+    }
+    .search{
+        display: none;
+        margin-left: 15px;
+        
+        a{
+            background-color: black;
+            color: white;
+            padding: 3px;
+            padding-right: 5px;
+            text-decoration: none;
+            font-weight: bolder;
+            height: 20px;
+        }
+        input{
+            height: 20px;
+            border: solid 3px black;
+            padding-left: 10px;
+        }
+    }
+
+    .notif{
+        display: flex;
+        flex: 0 0 40%;
+      
+        img{
+            cursor: pointer;
+            margin-left: 30px;
+            width: 100%;
+            max-width:  2rem;
+            height: 25px;
+        }
+
+    }
+
+
+    .user{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 0 20%;
+          border-left: solid 2px black;
+            padding: 12px;
+
+            h2{
+                margin-right: 7px;
+                cursor: pointer;
+               
+            }
+        img{
+            cursor: pointer;
+            width: 100%;
+            max-width: 40%;
+            border-radius: 50px;
+            border: solid 1px black;
+        }
+    }
+ 
+}
+
+
+
+
+
+
+
+.recherche{
+    background-color: rgba(128, 128, 128, 0.322);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+    .recherche-content{
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 15px;
+        margin: 5px 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20%;
+        .searc{
+            display: flex;
+        justify-content: center;
+            padding-top: 20px;
+        padding-bottom: 20px;
+            input{
+                border: 3px solid black;
+                width: 65%;
+                height: 40px;
+                padding-left: 5px;
+            }
+            a{
+                background-color: black;
+                color: white;
+                padding: 6px;
+                width: 25%;
+                font-weight: bolder;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        #Fm{
+          margin: auto;
+          text-align: center;
+          font-weight: bolder;
+          text-decoration: none;
+            width: 20%;
+            padding: 5px;
+             color: black;
+            background-color: white;
+            border: solid 2px black;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+   //    dubut menu burger
+ .side-bar {
+
+     .menu{
+        position: absolute;
+        width: 220px;
+        height: 100vh;
+        background-color: black;
+        left: -300px;
+        top: 55px;
+        transition: .5s ease-out;
+        z-index: 30;
+       ul{
+           li{
+               a{
+                   line-height: 7rem;
+               }
+           }
+       }
+    }
+ }
+
+.toggle-button{
+    // position: absolute;
+    // top: 24px;
+    // left: 10px;
+    cursor: pointer;
+    // height: 50px;
+    // width: 50px;
+    margin-left: 15px;
+   
+}
+.toggle-button span{
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: black;
+    display: block;
+    // margin-top: 4px;
+    transition: 0.5s ease;
+    
+}
+li{
+  color: white;
+  list-style-type: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-left: 10px;
+  a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+  }
+ 
+
+}
+ li:nth-child(1){
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+span:nth-child(1){
+    transform: translateY(-5px);
+}
+span:nth-child(3){
+    transform: translateY(5px);
+}
+.active .menu{
+     left: 0;
+    
+   
+}
+
+
+// .side-bar .active .toggle-button{
+//     top: 2.8rem;
+//     left: 235px;
+// }
+
+.active span {
+    position: absolute;
+}
+
+.active span:nth-child(1){
+    transform: rotate(45deg);
+}
+
+.active span:nth-child(2){
+  
+    opacity: 0;
+}
+
+.active span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+.side-bar .active ~ .content{
+    opacity: 0.3s;
+}
+
+@media screen and (min-width:810px){
+header{
+    .user{
+            padding: 8px;
+            h2{
+                text-align: start;
+                margin-right: 20px;
+            }
+            img{
+                max-width: 30%;
+                margin-right: 10px;
+            }
+    }
+    .search{
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 50%;
+       
+        }
+    .notif{
+        flex: 0 0 15%;
+        justify-content: end;
+        #recherche{
+            display: none;
+        }
+    }
+
+    .side-bar .menu{
+        left: 0;
+        top:0;
+        a{
+            font-weight: bolder;
+        }
+      
+    }
+   
+}
+}
+
+@media screen and (min-width:1080px) {
+    header{
+        height: 8vh;
+       .user{
+           flex: 0 0 10%;
+           height: 60px;
+           h2{
+               text-align: start;
+               margin: 30px;
+           }
+           img{
+               width: 50px;
+           }
+       }
+       .search{
+           justify-content: center;
+           
+           
+           input{
+               width: 40%;
+               height: 35px;
+           }
+           a{
+               height: 35px;
+               width: 10%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-size: 1.5rem;
+           }
+           
+       }
+       .notif{
+           flex:  0 0 30%;
+       }
+    }
+    .side-bar .menu{
+        width: 300px;
+        
+    }
+    a:hover{
+        background-color: white;
+        color: black;
+    
+    }
+
+}
