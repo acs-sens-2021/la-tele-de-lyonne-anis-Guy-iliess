@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/logo-tv-de-lyonnne.svg">
     <script src="./js/modal.js" defer></script>
     <script src="./js/nav.js" defer></script>
@@ -47,37 +46,37 @@
                 <p>TV DE L'YONNE est une Web TV du département de l'Yonne.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil explicabo unde blanditiis assumenda!
                     Doloremque modi atque culpa aliquid quisquam!</p>
-                
+
             </div>
         </article>
 
         <article class="vids">
             <h2>Nos dernières vidéos</h1>
-            <div class="Flex_container">
-                <figure>
-                    <img src="img/jt-accueil.png" alt="placeholder" width="100%">
-                    <figcaption>Le forum Sports & Loisirs du centre E.Leclerc de Saint-Denis-Lès-Sens </figcaption>
-                    <a href="#">voir la vidéo</a>
-                </figure>
-                <figure>
-                    <img src="img/241799784_321817019740554_3772092597613983079_n.jpeg" alt="placeholder" width="100%">
-                    <figcaption>Conseil du club Sens Volley 89 </figcaption>
-                    <a href="#">voir la vidéo</a>
-                </figure>
-            </div>
-            <div class="Flex_container">
-                <figure>
-                    <img src="img/jamilah.png" alt="placeholder" width="100%">
-                    <figcaption>La rentrée des classes du lycée d’Avallon</figcaption>
-                    <a href="#">voir la vidéo</a>
-                </figure>
-                <figure>
-                    <img src="img/BANNIERE-Ok.jpg" alt="placeholder" width="100%">
-                    <figcaption>« L’Yonne notre mémoire »« Comment c’était avant ? Raconte-nous !»</figcaption>
-                    <a href="#">voir la vidéo</a>
-                </figure>
-            </div>
-            <button><a href="">Toutes nos émissions</a></button>
+                <div class="Flex_container">
+                    <figure>
+                        <img src="img/jt-accueil.png" alt="placeholder" width="100%">
+                        <figcaption>Le forum Sports & Loisirs du centre E.Leclerc de Saint-Denis-Lès-Sens </figcaption>
+                        <a href="#">voir la vidéo</a>
+                    </figure>
+                    <figure>
+                        <img src="img/241799784_321817019740554_3772092597613983079_n.jpeg" alt="placeholder" width="100%">
+                        <figcaption>Conseil du club Sens Volley 89 </figcaption>
+                        <a href="#">voir la vidéo</a>
+                    </figure>
+                </div>
+                <div class="Flex_container">
+                    <figure>
+                        <img src="img/jamilah.png" alt="placeholder" width="100%">
+                        <figcaption>La rentrée des classes du lycée d’Avallon</figcaption>
+                        <a href="#">voir la vidéo</a>
+                    </figure>
+                    <figure>
+                        <img src="img/BANNIERE-Ok.jpg" alt="placeholder" width="100%">
+                        <figcaption>« L’Yonne notre mémoire »« Comment c’était avant ? Raconte-nous !»</figcaption>
+                        <a href="#">voir la vidéo</a>
+                    </figure>
+                </div>
+                <button><a href="">Toutes nos émissions</a></button>
         </article>
 
         <article class="map">
@@ -113,8 +112,7 @@
                     <textarea name="nom" id="nom" cols="50" rows="1" placeholder="Mon nom ..."></textarea>
                     <textarea name="mail" id="mail" cols="50" rows="1" placeholder="Mon mail ..."></textarea>
                     <textarea name="sujet" id="sujet" cols="50" rows="1" placeholder="Mon sujet ..."></textarea>
-                    <textarea name="texte" id="text" cols="50" rows="10"
-                        placeholder="Une question, une remarque, une idée de reportage ou une suggestion pour le site ? Vous avez un projet et vous souhaitez nous en parler ?"></textarea>
+                    <textarea name="texte" id="text" cols="50" rows="10" placeholder="Une question, une remarque, une idée de reportage ou une suggestion pour le site ? Vous avez un projet et vous souhaitez nous en parler ?"></textarea>
                 </div>
                 <div class="buttons">
                     <p>Mon fichier</p>
@@ -146,11 +144,7 @@
             </div>
         </div>
 
-        <div class="news">
-            <p class="texte2">Je m’abonne pour recevoir les meilleurs articles</p>
-            <input class="input" type="email" placeholder="mon email*">
-            <button class="button">je reçois les newsletters</button>
-        </div>
+      <?php include_once 'includes/newsletters.php' ?>
 
         <div class="lien">
             <a class="myBtn">Nous contacter</a>
