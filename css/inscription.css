@@ -75,6 +75,9 @@ main .form-container form .champ input {
   width: 100%;
   text-align: center;
 }
+main .form-container .alertes {
+  color: red;
+}
 main .form-container button {
   border-radius: 50px;
   background-color: #7987f0;
