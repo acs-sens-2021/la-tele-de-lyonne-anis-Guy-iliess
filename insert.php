@@ -16,9 +16,21 @@ if (isset($_POST['category']) && isset($_POST['title']) && isset($_POST['video']
         $my_description = strip_tags($_POST['description']);
         $optional += 1;
     }
-    if (isset($_POST['file']) && !empty($_POST['file'])) {
-        $my_file = ($_POST['file']);
-        $optional += 2;
+    if (isset($_FILES['file']) && !empty($_FILES['file'])) {
+        $uniqName = uniqid('', true);
+        $name = $_FILES['file']['name'];
+
+        $tabExtension = explode('.', $name);
+        $extension = strtolower(end($tabExtension));
+        //Tableau des extensions que l'on accepte
+        $extensions = ['jpg', 'png', 'jpeg', 'gif', 'svg'];
+
+        if (in_array($extension, $extensions)) {
+            $uniqName = $uniqName . "." . $extension;
+            $my_file = "./img/uploaded/" . $category . "/" . $uniqName;
+            move_uploaded_file($_FILES['file']['tmp_name'], $my_file);
+            $optional += 2;
+        }
     }
 
     require_once 'includes/connect.php';
@@ -57,7 +69,6 @@ if (isset($_POST['category']) && isset($_POST['title']) && isset($_POST['video']
     $requete->execute();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -73,7 +84,7 @@ if (isset($_POST['category']) && isset($_POST['title']) && isset($_POST['video']
 <body>
     <main>
         <h1 class="titre">Insertion d'article</h1>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <h2>Catégorie :</h2>
             <select name="category" id="category">Categorie
                 <?php
