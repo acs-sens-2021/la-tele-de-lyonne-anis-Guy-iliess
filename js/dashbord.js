@@ -1,16 +1,16 @@
-let btn = document.querySelector("#recherche");
-let modal = document.querySelector(".recherche");
+// let btn = document.querySelector("#recherche");
+// let modal = document.querySelector(".recherche");
 
- btn.addEventListener("click",()=>{
-   modal.style.display = "block"; 
- });
+//  btn.addEventListener("click",()=>{
+//    modal.style.display = "block"; 
+//  });
 
 
- let btnClose = document.querySelector("#Fm");
+//  let btnClose = document.querySelector("#Fm");
 
- btnClose.addEventListener("click",()=>{
-    modal.style.display = "none"; 
-  });
+//  btnClose.addEventListener("click",()=>{
+//     modal.style.display = "none"; 
+//   });
  
 
 
@@ -34,3 +34,5 @@ let navbar = document.querySelector(".side-bar");
   // let menu = document.querySelector(".side-bar");
 
   // const
+  ///user
+  
