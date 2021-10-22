@@ -57,6 +57,8 @@ if (!empty($_POST)) {
         $requete->bindValue(':my_file', $my_file, $paramFile);
 
         $requete->execute();
+        header('Location: insert.php');
+        exit;
     }
 }
 ?>
