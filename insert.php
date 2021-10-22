@@ -1,72 +1,63 @@
 <?php
 session_start();
 
-if (isset($_POST['category']) && isset($_POST['title']) && isset($_POST['video']) && !empty($_POST['category']) && !empty($_POST['title']) && !empty($_POST['video'])) {
-    $category = strip_tags($_POST['category']);
-    $title = strip_tags($_POST['title']);
-    $video = strip_tags($_POST['video']);
-    $date_creation = date('Y-m-d');
-    $u_id = 1;
-    $link = "tmplink.html/tmp/";
+if (!empty($_POST)) {
+    if (isset($_POST['category']) && isset($_POST['title']) && isset($_POST['video']) && !empty($_POST['category']) && !empty($_POST['title']) && !empty($_POST['video'])) {
+        $category = strip_tags($_POST['category']);
+        $title = strip_tags($_POST['title']);
+        $video = strip_tags($_POST['video']);
+        $link = "tmplink.html/tmp/";
+        $my_file = $my_description = NULL;
+        $u_id = 1;
 
-    // 0 = none, 1 = description, 2 = file, 3 = description + file
-    $optional = 0;
-
-    if (isset($_POST['description']) && !empty($_POST['description'])) {
-        $my_description = strip_tags($_POST['description']);
-        $optional += 1;
-    }
-    if (isset($_FILES['file']) && !empty($_FILES['file'])) {
-        $uniqName = uniqid('', true);
-        $name = $_FILES['file']['name'];
-
-        $tabExtension = explode('.', $name);
-        $extension = strtolower(end($tabExtension));
-        //Tableau des extensions que l'on accepte
-        $extensions = ['jpg', 'png', 'jpeg', 'gif', 'svg'];
-
-        if (in_array($extension, $extensions)) {
-            $uniqName = $uniqName . "." . $extension;
-            $my_file = "./img/uploaded/" . $category . "/" . $uniqName;
-            move_uploaded_file($_FILES['file']['tmp_name'], $my_file);
-            $optional += 2;
+        // Verif & assignement description si existante
+        if (isset($_POST['description']) && !empty($_POST['description'])) {
+            $my_description = strip_tags($_POST['description']);
         }
-    }
 
-    require_once 'includes/connect.php';
+        // Verif & assignement fichier si existant
+        if (isset($_FILES['file']) && !empty($_FILES['file'])) {
+            $uniqName = md5(uniqid('', true));
+            $name = $_FILES['file']['name'];
+            $tabExtension = explode('.', $name);
+            $extension = strtolower(end($tabExtension));
+            $extensions = ['jpg', 'png', 'jpeg', 'svg'];
+            $types = ['image/svg', 'image/jpeg', 'image/png'];
 
-    $sql = "INSERT INTO `articles` (`category`, `title`, `link`, `video`, `user_id`) VALUES (:category, :title, :link, :video, :u_id);";
+            // Verif si le fichier est conforme (extension acceptée, taille max respectée & aucune erreur)
+            if (!in_array($_FILES['file']['type'], $types) || !in_array($extension, $extensions) || 4194304 < $_FILES['file']['size']) {
+                $_SESSION['msg_error'][] = "Votre fichier n'est pas conforme, il doit peser moins de 4Mo et respecter le format autorisé (jpeg, jpg, png, svg)";
+                header('Location: insert.php');
+                exit;
+            }
+            if ($_FILES['file']['error'] != 0) {
+                $_SESSION['msg_error'][] = "Une erreur a eu lieu durant la récupération de votre fichier";
+                header('Location: insert.php');
+                exit;
+            }
+            $my_file = $uniqName . "." . $extension;
+            move_uploaded_file($_FILES['file']['tmp_name'], __DIR__ . "/img/uploaded/" . $my_file);
+        }
 
-    if ($optional === 1) {
-        $sql = "INSERT INTO `articles` (`category`, `title`, `description`, `link`, `video`, `user_id`) VALUES (:category, :title, :my_description, :link, :video, :u_id);";
-    }
-    if ($optional === 2) {
-        $sql = "INSERT INTO `articles` (`category`, `title`,`link`, `video`, `picture`, `user_id`) VALUES (:category, :title, :link, :video, :my_file, :u_id);";
-    }
-    if ($optional === 3) {
+        require_once 'includes/connect.php';
+
         $sql = "INSERT INTO `articles` (`category`, `title`, `description`, `link`, `video`, `picture`, `user_id`) VALUES (:category, :title, :my_description, :link, :video, :my_file, :u_id);";
-    }
 
-    $requete = $db->prepare($sql);
+        $requete = $db->prepare($sql);
 
-    $requete->bindValue(':category', $category);
-    $requete->bindValue(':title', $title);
-    $requete->bindValue(':link', $link);
-    $requete->bindValue(':video', $video);
-    $requete->bindValue(':u_id', $u_id);
+        $requete->bindValue(':category', $category);
+        $requete->bindValue(':title', $title);
+        $requete->bindValue(':link', $link);
+        $requete->bindValue(':video', $video);
+        $requete->bindValue(':u_id', $u_id);
 
-    if ($optional === 1) {
-        $requete->bindValue(':my_description', $my_description);
-    }
-    if ($optional === 2) {
-        $requete->bindValue(':my_file', $my_file);
-    }
-    if ($optional === 3) {
-        $requete->bindValue(':my_description', $my_description);
-        $requete->bindValue(':my_file', $my_file);
-    }
+        $paramDescrip = ($my_description != NULL) ? PDO::PARAM_STR : PDO::PARAM_NULL;
+        $paramFile = ($my_file != NULL) ? PDO::PARAM_STR : PDO::PARAM_NULL;
+        $requete->bindValue(':my_description', $my_description, $paramDescrip);
+        $requete->bindValue(':my_file', $my_file, $paramFile);
 
-    $requete->execute();
+        $requete->execute();
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -84,6 +75,16 @@ if (isset($_POST['category']) && isset($_POST['title']) && isset($_POST['video']
 <body>
     <main>
         <h1 class="titre">Insertion d'article</h1>
+        <?php
+        if (isset($_SESSION['msg_error'])) {
+            foreach ($_SESSION['msg_error'] as $message) {
+                echo '<p style="text-align: center; font-size: 16px; color: black; font-weight: bold">';
+                echo "$message";
+                echo '</p>';
+            }
+            unset($_SESSION['msg_error']);
+        }
+        ?>
         <form method="post" enctype="multipart/form-data">
             <h2>Catégorie :</h2>
             <select name="category" id="category">Categorie
