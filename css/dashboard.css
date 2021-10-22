@@ -14,33 +14,10 @@ header {
   align-items: center;
   height: 6vh;
 }
-header #recherche {
-  width: 100%;
-  max-width: 1.5rem;
-  height: 25px;
-  cursor: pointer;
-}
-header .search {
-  display: none;
-  margin-left: 15px;
-}
-header .search a {
-  background-color: black;
-  color: white;
-  padding: 3px;
-  padding-right: 5px;
-  text-decoration: none;
-  font-weight: bolder;
-  height: 20px;
-}
-header .search input {
-  height: 20px;
-  border: solid 3px black;
-  padding-left: 10px;
-}
 header .notif {
   display: flex;
   flex: 0 0 40%;
+  justify-content: flex-end;
 }
 header .notif img {
   cursor: pointer;
@@ -69,74 +46,34 @@ header .user img {
   border: solid 1px black;
 }
 
-.recherche {
-  background-color: rgba(128, 128, 128, 0.322);
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-  display: none;
-}
-.recherche .recherche-content {
-  background-color: white;
-  border: solid 2px black;
-  border-radius: 15px;
-  margin: 5px 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20%;
-}
-.recherche .recherche-content .searc {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.recherche .recherche-content .searc input {
-  border: 3px solid black;
-  width: 65%;
-  height: 40px;
-  padding-left: 5px;
-}
-.recherche .recherche-content .searc a {
-  background-color: black;
-  color: white;
-  padding: 6px;
-  width: 25%;
-  font-weight: bolder;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.recherche .recherche-content #Fm {
-  margin: auto;
-  text-align: center;
-  font-weight: bolder;
-  text-decoration: none;
-  width: 20%;
-  padding: 5px;
-  color: black;
-  background-color: white;
-  border: solid 2px black;
-  margin-bottom: 10px;
-}
-
 .side-bar .menu {
   position: absolute;
-  width: 220px;
-  height: 100vh;
+  width: 150px;
   background-color: black;
   left: -300px;
-  top: 55px;
+  top: 6vh;
+  bottom: 0;
   transition: 0.5s ease-out;
   z-index: 30;
 }
+.side-bar .menu ul li {
+  color: white;
+  list-style-type: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-left: 10px;
+}
 .side-bar .menu ul li a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
   line-height: 7rem;
+  font-size: 1.5rem;
+}
+.side-bar .menu ul li:nth-child(1) a {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .toggle-button {
@@ -151,25 +88,6 @@ header .user img {
   background-color: black;
   display: block;
   transition: 0.5s ease;
-}
-
-li {
-  color: white;
-  list-style-type: none;
-  font-size: 2.5rem;
-  cursor: pointer;
-  padding-left: 10px;
-}
-li a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 20px;
-}
-
-li:nth-child(1) {
-  margin-top: 10px;
-  text-align: center;
-  text-decoration: underline;
 }
 
 span:nth-child(1) {
@@ -216,17 +134,9 @@ span:nth-child(3) {
     max-width: 30%;
     margin-right: 10px;
   }
-  header .search {
-    display: flex;
-    justify-content: flex-end;
-    flex: 0 50%;
-  }
   header .notif {
     flex: 0 0 15%;
     justify-content: end;
-  }
-  header .notif #recherche {
-    display: none;
   }
   header .side-bar .menu {
     left: 0;
@@ -251,31 +161,55 @@ span:nth-child(3) {
   header .user img {
     width: 50px;
   }
-  header .search {
-    justify-content: center;
-  }
-  header .search input {
-    width: 40%;
-    height: 35px;
-  }
-  header .search a {
-    height: 35px;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
   header .notif {
     flex: 0 0 30%;
   }
 
   .side-bar .menu {
-    width: 300px;
+    width: 20%;
   }
-
-  a:hover {
+  .side-bar .menu a:hover {
     background-color: white;
     color: black;
   }
+}
+main #home {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media (min-width: 1024px) {
+  main #home {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1776px) {
+  main #home {
+    width: 75%;
+  }
+}
+main #home .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 4px 4px 12px black, -4px -4px 12px black;
+  padding: 3rem;
+}
+main #home .card .title {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+main #home .card .crud a {
+  text-decoration: none;
+  color: red;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
 }/*# sourceMappingURL=dashboard.css.map */

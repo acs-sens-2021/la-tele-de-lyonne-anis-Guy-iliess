@@ -11,71 +11,92 @@
 </head>
 
 <body>
-  <header>
+ <?php require_once "includes/navdash.php" ?>
+  <main>
+    <section id="home">
+     
+        <div class="card">
+          <div class="title">
+            <h1>Articles</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="crud">
+            <a href="#"> Ajouter</a>
+             <a href="#">Modifier</a> 
+            <a href="#">Supprimer</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Newsletters</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="crud">
+            <a href="#"> Ajouter</a>
+             <a href="#">Modifier</a> 
+            <a href="#">Supprimer</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Partenaires</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="crud">
+            <a href="#"> Ajouter</a>
+             <a href="#">Modifier</a> 
+            <a href="#">Supprimer</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Émissions</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="crud">
+            <a href="#"> Ajouter</a>
+             <a href="#">Modifier</a> 
+            <a href="#">Supprimer</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Articles</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="crud">
+            <a href="#"> Ajouter</a>
+             <a href="#">Modifier</a> 
+            <a href="#">Supprimer</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h1>Contact</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="crud">
+            <a href="#"> Ajouter</a>
+             <a href="#">Modifier</a> 
+            <a href="#">Supprimer</a>
+          </div>
+        </div>
+       
+    </section>
 
-    <div class="side-bar">
-
-      <div class="menu">
-        <ul>
-          
-
-          <li> <a href="">Dashboard</a> </li>
-          
-          <li><a href="#">Articles</a></li>
-         
-          <li><a href="#">Newsletters</a></li>
-
-          <li><a href="#">Partenaires</a></li>
-          
-          <li><a href="#">Émissions</a></li>
-
-          <li><a href="#">Contacts</a></li>
-         
-         
-        </ul>
-      </div>
-
-      <div class="toggle-button">
-
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-    </div>
-
-
-
-    <div class="search">
-      <input type="search1" placeholder="RECHERCHE..">
-      <a href="#">valider</a>
-    </div>
-
-
-    <div class="notif">
-      <img id="recherche" src="img/recherche.svg" alt="loupe">
-      <img src="img/cloche.png" alt="cloche notification">
-      <img src="img/lettre.png" alt="">
-    </div>
-
-    <div class="user">
-      <h2>anis</h2>
-      <img src="img/Places-user-identity-icon.png" alt="">
-
-    </div>
-
-
-  </header>
-  <div class="recherche">
-    <div class="recherche-content">
-      <div class="searc">
-        <input type="search" placeholder="RECHERCHE..">
-        <a href="#">CHERCHER</a>
-      </div>
-
-      <a href="#" id="Fm">fermer</a>
-    </div>
-  </div>
+  </main>
 
 
 
